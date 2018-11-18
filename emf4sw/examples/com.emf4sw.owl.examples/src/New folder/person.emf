@@ -1,0 +1,10 @@
+@namespace(uri="http://eclipselabs.org/emf4sw/person", prefix="person")
+package person;
+
+@OWLClass(uri = "http://eclipselabs.org/emf4sw/person#Person")
+class Person {
+
+@DatatypeProperty(uri = "http://eclipselabs.org/emf4sw/person#name")
+   attr String name;
+   ref Person[*] knows;
+}

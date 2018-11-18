@@ -1,0 +1,144 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.emf4sw</groupId>
+	<artifactId>emf4sw</artifactId>
+	<version>0.7.2-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>bundles/com.emf4sw.rdf</module>
+		<module>features/com.emf4sw.rdf.feature</module>
+		
+		<module>bundles/com.emf4sw.rdf.jena</module>
+		<module>features/com.emf4sw.rdf.jena.feature</module>
+		
+		<module>bundles/com.emf4sw.rdf.sesame</module>
+		<module>features/com.emf4sw.rdf.sesame.feature</module>
+		
+		<module>bundles/com.emf4sw.rdf.transform</module>
+		<module>features/com.emf4sw.rdf.transform.feature</module>
+		
+		<module>bundles/com.emf4sw.rdf.json</module>
+		<module>features/com.emf4sw.rdf.json.feature</module>
+
+		<module>bundles/com.emf4sw.owl</module>
+		<module>features/com.emf4sw.owl.feature</module>
+		
+		<module>bundles/com.emf4sw.owl.jena</module>
+		<module>features/com.emf4sw.owl.jena.feature</module>
+		
+		<module>bundles/com.emf4sw.owl.transform</module>
+		<module>features/com.emf4sw.owl.transform.feature</module>
+		
+		<module>build/repository</module>
+	</modules>
+
+	<properties>
+		<tycho-version>0.14.0</tycho-version>
+		<build-type>snapshots</build-type>
+		<atl.version>3.6.0-SNAPSHOT</atl.version>
+	<emf.version>2.10.0-v20140514-1158</emf.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>eclipse</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/indigo</url>
+		</repository>
+		<repository>
+			<id>dependencies</id>
+			<layout>p2</layout>
+			<url>http://ghillairet.github.com/p2</url>
+		</repository>
+        <repository>
+            <id>atl-commons</id>
+            <layout>p2</layout>
+            <url>http://svn.codespot.com/a/eclipselabs.org/atl-commons/snapshots/</url>
+        </repository>
+	</repositories>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<resolver>p2</resolver>
+					<pomDependencies>consider</pomDependencies>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<argLine>-Xmx512M</argLine>
+					<includes>
+						<include>**/junit/suite/TestSuite.java</include>
+					</includes>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<includeAllDependencies>false</includeAllDependencies>
+					<createArtifactRepository>true</createArtifactRepository>
+					<compress>true</compress>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-publisher-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<publishArtifacts>true</publishArtifacts>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+	
+</project>

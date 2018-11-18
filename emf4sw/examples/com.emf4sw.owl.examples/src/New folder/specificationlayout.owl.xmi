@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OWL="http://www.w3.org/2002/07/owl">
+  <OWL:Ontology URI="http://specificationlayout">
+    <classes objectOf="/0/@triples.28 /0/@triples.29" subjectOf="/0/@triples.0 /0/@triples.13 /0/@triples.14" URI="http://specificationlayout#Document" subClassOf="/1 /2"/>
+    <properties URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" predicateOf="/0/@triples.0 /0/@triples.1 /0/@triples.2 /0/@triples.3 /0/@triples.4 /0/@triples.5 /0/@triples.6 /0/@triples.7 /0/@triples.8 /0/@triples.9 /0/@triples.10 /0/@triples.11 /0/@triples.12"/>
+    <resources objectOf="/0/@triples.0 /0/@triples.1" URI="http://www.w3.org/2002/07/owl#Class"/>
+    <classes objectOf="/0/@triples.19 /0/@triples.20 /0/@triples.21 /0/@triples.22 /0/@triples.23 /0/@triples.24 /0/@triples.25 /0/@triples.26 /0/@triples.27 /0/@triples.30" subjectOf="/0/@triples.1 /0/@triples.15 /0/@triples.16 /0/@triples.17 /0/@triples.18" URI="http://specificationlayout#Header" subClassOf="/0/@classExpressions.0 /0/@classExpressions.1 /0/@classExpressions.2 /0/@classExpressions.3"/>
+    <objectProperties subjectOf="/0/@triples.2 /0/@triples.29 /0/@triples.30" URI="http://specificationlayout#header" domain="http://specificationlayout#Document" range="http://specificationlayout#Header"/>
+    <resources objectOf="/0/@triples.2 /0/@triples.3" URI="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <objectProperties subjectOf="/0/@triples.3 /0/@triples.28" URI="http://specificationlayout#rootElement" domain="http://specificationlayout#Document"/>
+    <dataProperties subjectOf="/0/@triples.4 /0/@triples.20" URI="http://specificationlayout#author" domain="http://specificationlayout#Header"/>
+    <resources objectOf="/0/@triples.4 /0/@triples.5 /0/@triples.6 /0/@triples.7 /0/@triples.8 /0/@triples.9 /0/@triples.10 /0/@triples.11 /0/@triples.12" URI="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <dataProperties subjectOf="/0/@triples.5 /0/@triples.27" URI="http://specificationlayout#footerRight" domain="http://specificationlayout#Header"/>
+    <dataProperties subjectOf="/0/@triples.6 /0/@triples.23" URI="http://specificationlayout#headlineCenter" domain="http://specificationlayout#Header"/>
+    <dataProperties subjectOf="/0/@triples.7 /0/@triples.24" URI="http://specificationlayout#headlineRight" domain="http://specificationlayout#Header"/>
+    <dataProperties subjectOf="/0/@triples.8 /0/@triples.22" URI="http://specificationlayout#tableOfConents" domain="http://specificationlayout#Header"/>
+    <dataProperties subjectOf="/0/@triples.9 /0/@triples.25" URI="http://specificationlayout#footerLeft" domain="http://specificationlayout#Header"/>
+    <dataProperties subjectOf="/0/@triples.10 /0/@triples.26" URI="http://specificationlayout#footerCenter" domain="http://specificationlayout#Header"/>
+    <dataProperties subjectOf="/0/@triples.11 /0/@triples.19" URI="http://specificationlayout#title" domain="http://specificationlayout#Header"/>
+    <dataProperties subjectOf="/0/@triples.12 /0/@triples.21" URI="http://specificationlayout#date" domain="http://specificationlayout#Header"/>
+    <properties URI="http://www.w3.org/2000/01/rdf-schema#subClassOf" predicateOf="/0/@triples.13 /0/@triples.14 /0/@triples.15 /0/@triples.16 /0/@triples.17 /0/@triples.18"/>
+    <classExpressions xsi:type="OWL:DataMinCardinality" objectOf="/0/@triples.15" superClass="http://specificationlayout#Header" cardinality="1" property="http://specificationlayout#title"/>
+    <classExpressions xsi:type="OWL:DataMinCardinality" objectOf="/0/@triples.16" superClass="http://specificationlayout#Header" cardinality="1" property="http://specificationlayout#author"/>
+    <classExpressions xsi:type="OWL:DataExactCardinality" objectOf="/0/@triples.17" superClass="http://specificationlayout#Header" cardinality="1" property="http://specificationlayout#date"/>
+    <classExpressions xsi:type="OWL:DataExactCardinality" objectOf="/0/@triples.18" superClass="http://specificationlayout#Header" cardinality="1" property="http://specificationlayout#tableOfConents"/>
+    <properties URI="http://www.w3.org/2000/01/rdf-schema#domain" predicateOf="/0/@triples.19 /0/@triples.20 /0/@triples.21 /0/@triples.22 /0/@triples.23 /0/@triples.24 /0/@triples.25 /0/@triples.26 /0/@triples.27 /0/@triples.28 /0/@triples.29"/>
+    <properties URI="http://www.w3.org/2000/01/rdf-schema#range" predicateOf="/0/@triples.30"/>
+    <triples subject="http://specificationlayout#Document" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#Class"/>
+    <triples subject="http://specificationlayout#Header" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#Class"/>
+    <triples subject="http://specificationlayout#header" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <triples subject="http://specificationlayout#rootElement" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <triples subject="http://specificationlayout#author" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <triples subject="http://specificationlayout#footerRight" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <triples subject="http://specificationlayout#headlineCenter" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <triples subject="http://specificationlayout#headlineRight" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <triples subject="http://specificationlayout#tableOfConents" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <triples subject="http://specificationlayout#footerLeft" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <triples subject="http://specificationlayout#footerCenter" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <triples subject="http://specificationlayout#title" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <triples subject="http://specificationlayout#date" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" object="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <triples subject="http://specificationlayout#Document" predicate="http://www.w3.org/2000/01/rdf-schema#subClassOf" object="/1"/>
+    <triples subject="http://specificationlayout#Document" predicate="http://www.w3.org/2000/01/rdf-schema#subClassOf" object="/2"/>
+    <triples subject="http://specificationlayout#Header" predicate="http://www.w3.org/2000/01/rdf-schema#subClassOf" object="/0/@classExpressions.0"/>
+    <triples subject="http://specificationlayout#Header" predicate="http://www.w3.org/2000/01/rdf-schema#subClassOf" object="/0/@classExpressions.1"/>
+    <triples subject="http://specificationlayout#Header" predicate="http://www.w3.org/2000/01/rdf-schema#subClassOf" object="/0/@classExpressions.2"/>
+    <triples subject="http://specificationlayout#Header" predicate="http://www.w3.org/2000/01/rdf-schema#subClassOf" object="/0/@classExpressions.3"/>
+    <triples subject="http://specificationlayout#title" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Header"/>
+    <triples subject="http://specificationlayout#author" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Header"/>
+    <triples subject="http://specificationlayout#date" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Header"/>
+    <triples subject="http://specificationlayout#tableOfConents" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Header"/>
+    <triples subject="http://specificationlayout#headlineCenter" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Header"/>
+    <triples subject="http://specificationlayout#headlineRight" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Header"/>
+    <triples subject="http://specificationlayout#footerLeft" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Header"/>
+    <triples subject="http://specificationlayout#footerCenter" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Header"/>
+    <triples subject="http://specificationlayout#footerRight" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Header"/>
+    <triples subject="http://specificationlayout#rootElement" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Document"/>
+    <triples subject="http://specificationlayout#header" predicate="http://www.w3.org/2000/01/rdf-schema#domain" object="http://specificationlayout#Document"/>
+    <triples subject="http://specificationlayout#header" predicate="http://www.w3.org/2000/01/rdf-schema#range" object="http://specificationlayout#Header"/>
+  </OWL:Ontology>
+  <OWL:ObjectExactCardinality objectOf="/0/@triples.13" superClass="http://specificationlayout#Document" property="http://specificationlayout#rootElement" cardinality="1"/>
+  <OWL:ObjectExactCardinality objectOf="/0/@triples.14" superClass="http://specificationlayout#Document" property="http://specificationlayout#header" cardinality="1" onClass="http://specificationlayout#Header"/>
+</xmi:XMI>

@@ -1,0 +1,30 @@
+-- @atlcompiler atl2006
+
+module RDF2MODEL;
+create OUT : Model from IN : RDF, IN2 : Properties, IN3 : Ecore;
+
+helper def: isValid(s : String) : Boolean =
+ if s.oclIsUndefined() then
+  false
+ else
+  s.trim().size() > 0
+ endif;
+
+rule Person {
+ from
+  r : RDF!SubjectNode
+  (
+   Ecore!EClass.allInstancesFrom('IN3')->any(it |
+    it.name = 'Person'
+   ).isValidObject(r)
+  )
+ to
+  o : Model!Person (
+   knows <- r.getValues('http://eclipselabs.org/emf4sw/person#knows')
+  )
+ do {
+  if(thisModule.isValid(r.getStringValue('http://eclipselabs.org/emf4sw/person#name')))
+   o.name <- r.getStringValue('http://eclipselabs.org/emf4sw/person#name').convertTo('EString');
+  
+ }
+}

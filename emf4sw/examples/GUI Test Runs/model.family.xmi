@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<family_ecore:Family
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:family_ecore="http://example.org/family.ecore"
+    xsi:schemaLocation="http://example.org/family.ecore Family.ecore">
+  <member name="Ahmed"
+      hasFather="//@member.1"
+      hasUncle="//@member.2"/>
+  <member name="Ali"
+      hasBrother="//@member.2"/>
+  <member name="Saad"
+      hasBrother="//@member.1"/>
+</family_ecore:Family>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.emf4sw.rdf.json.feature"
+      label="EMF4SW RDF JSON"
+      version="0.7.2.qualifier"
+      provider-name="Eclipse Labs">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="com.emf4sw.rdf"/>
+      <import plugin="org.codehaus.jackson.core"/>
+      <import plugin="org.codehaus.jackson.mapper"/>
+   </requires>
+
+   <plugin
+         id="com.emf4sw.rdf.json"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

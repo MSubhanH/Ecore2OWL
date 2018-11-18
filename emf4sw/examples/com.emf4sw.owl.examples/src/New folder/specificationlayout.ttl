@@ -1,0 +1,83 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://specificationlayout#header>
+        a            owl:ObjectProperty ;
+        rdfs:domain  <http://specificationlayout#Document> ;
+        rdfs:range   <http://specificationlayout#Header> .
+
+<http://specificationlayout>
+        a       owl:Ontology .
+
+<http://specificationlayout#footerCenter>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://specificationlayout#Header> .
+
+<http://specificationlayout#Header>
+        a                owl:Class ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  "1"^^xsd:int ;
+                           owl:onProperty   <http://specificationlayout#tableOfConents>
+                         ] ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  "1"^^xsd:int ;
+                           owl:onProperty   <http://specificationlayout#date>
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:minCardinality  "1"^^xsd:int ;
+                           owl:onProperty      <http://specificationlayout#author>
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:minCardinality  "1"^^xsd:int ;
+                           owl:onProperty      <http://specificationlayout#title>
+                         ] .
+
+<http://specificationlayout#tableOfConents>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://specificationlayout#Header> .
+
+<http://specificationlayout#date>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://specificationlayout#Header> .
+
+<http://specificationlayout#footerRight>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://specificationlayout#Header> .
+
+<http://specificationlayout#footerLeft>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://specificationlayout#Header> .
+
+<http://specificationlayout#headlineRight>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://specificationlayout#Header> .
+
+<http://specificationlayout#Document>
+        a                owl:Class ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  "1"^^xsd:int ;
+                           owl:onClass      <http://specificationlayout#Header> ;
+                           owl:onProperty   <http://specificationlayout#header>
+                         ] ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  "1"^^xsd:int ;
+                           owl:onProperty   <http://specificationlayout#rootElement>
+                         ] .
+
+<http://specificationlayout#headlineCenter>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://specificationlayout#Header> .
+
+<http://specificationlayout#title>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://specificationlayout#Header> .
+
+<http://specificationlayout#author>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://specificationlayout#Header> .
+
+<http://specificationlayout#rootElement>
+        a            owl:ObjectProperty ;
+        rdfs:domain  <http://specificationlayout#Document> .

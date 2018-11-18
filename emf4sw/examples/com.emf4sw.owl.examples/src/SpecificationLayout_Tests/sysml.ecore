@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sysml" nsURI="http://sysml" nsPrefix="sysml">
+  <eClassifiers xsi:type="ecore:EClass" name="SysML_Requirement" eSuperTypes="uml4sysml.ecore#//UML_Class">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requirementDesignation"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requirementRelation" eType="ecore:EClass uml4sysml.ecore#//UML_Class"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requirementRelationClassifier"
+        eType="#//SysML_RequirementRelationClassifier"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="captionCapable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="captionTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SysML_Block" eSuperTypes="uml4sysml.ecore#//UML_Class"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SysML_ConstraintProperty" eSuperTypes="uml4sysml.ecore#//UML_Property"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SysML_BindingConnector" eSuperTypes="uml4sysml.ecore#//UML_Connector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SysML_ConstraintBlock" eSuperTypes="#//SysML_Block"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="SysML_RequirementRelationClassifier">
+    <eLiterals name="decomposed"/>
+    <eLiterals name="derivedFrom" value="1"/>
+    <eLiterals name="tracedFrom" value="2"/>
+    <eLiterals name="refinedBy" value="3"/>
+    <eLiterals name="satisfiedBY" value="4"/>
+    <eLiterals name="verifiedBy" value="5"/>
+    <eLiterals name="copiedFrom" value="6"/>
+  </eClassifiers>
+</ecore:EPackage>

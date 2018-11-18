@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated person -->
+      <package
+            uri="http://eclipselabs.org/emf4sw/person"
+            class="person.PersonPackage"
+            genModel="examples/com.emf4sw.owl.examples/src/person.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Family -->
+      <package
+            uri="http://example.org/family.ecore"
+            class="family.FamilyPackage"
+            genModel="examples/com.emf4sw.rdf.examples/src/Family.genmodel"/>
+   </extension>
+
+</plugin>

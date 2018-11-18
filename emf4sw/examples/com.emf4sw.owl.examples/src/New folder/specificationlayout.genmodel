@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/SysML_Requirements_OCR/src" modelPluginID="SysML_Requirements_OCR"
+    modelName="Specificationlayout" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>specificationlayout.ecore</foreignModel>
+  <genPackages prefix="Specificationlayout" basePackage="tum.mw.ais.specificationlayout"
+      disposableProviderFactory="true" ecorePackage="specificationlayout.ecore#/">
+    <genClasses ecoreClass="specificationlayout.ecore#//Document">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference specificationlayout.ecore#//Document/rootElement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference specificationlayout.ecore#//Document/header"/>
+    </genClasses>
+    <genClasses ecoreClass="specificationlayout.ecore#//Header">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute specificationlayout.ecore#//Header/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute specificationlayout.ecore#//Header/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute specificationlayout.ecore#//Header/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute specificationlayout.ecore#//Header/tableOfConents"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute specificationlayout.ecore#//Header/headlineCenter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute specificationlayout.ecore#//Header/headlineRight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute specificationlayout.ecore#//Header/footerLeft"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute specificationlayout.ecore#//Header/footerCenter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute specificationlayout.ecore#//Header/footerRight"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Sysml" basePackage="tum.mw.ais.sysml" disposableProviderFactory="true"
+      ecorePackage="sysml.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sysml.ecore#//SysML_RequirementRelationClassifier">
+      <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//SysML_RequirementRelationClassifier/decomposed"/>
+      <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//SysML_RequirementRelationClassifier/derivedFrom"/>
+      <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//SysML_RequirementRelationClassifier/tracedFrom"/>
+      <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//SysML_RequirementRelationClassifier/refinedBy"/>
+      <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//SysML_RequirementRelationClassifier/satisfiedBY"/>
+      <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//SysML_RequirementRelationClassifier/verifiedBy"/>
+      <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//SysML_RequirementRelationClassifier/copiedFrom"/>
+    </genEnums>
+    <genClasses ecoreClass="sysml.ecore#//SysML_Requirement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//SysML_Requirement/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//SysML_Requirement/requirementDesignation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//SysML_Requirement/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sysml.ecore#//SysML_Requirement/requirementRelation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//SysML_Requirement/requirementRelationClassifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//SysML_Requirement/captionCapable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//SysML_Requirement/captionTitle"/>
+    </genClasses>
+    <genClasses ecoreClass="sysml.ecore#//SysML_Block"/>
+    <genClasses ecoreClass="sysml.ecore#//SysML_ConstraintProperty"/>
+    <genClasses ecoreClass="sysml.ecore#//SysML_BindingConnector"/>
+    <genClasses ecoreClass="sysml.ecore#//SysML_ConstraintBlock"/>
+  </genPackages>
+  <genPackages prefix="Uml" basePackage="tum.mw.ais.uml" disposableProviderFactory="true"
+      ecorePackage="uml4sysml.ecore#/">
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uml4sysml.ecore#//UML_NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_RedefinableElement"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Feature"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Namespace">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Namespace/ownedRule"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Package">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Package/packagedElements"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_PackageableElement"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_BehavioralFeature"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_StructuralFeature"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Type"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_TypedElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_TypedElement/type"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Classifier">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Classifier/feature"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Interface">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Interface/ownedOperation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Interface/ownedAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_InterfaceRealization">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_InterfaceRealization/contract"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_BehavioredClassifier">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_BehavioredClassifier/interfaceRealization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_BehavioredClassifier/ownedBehavior"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Operation"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Class">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Class/ownedOperation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Class/nestedClassifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Class/ownedAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Property"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Port"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Behavior"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Activity">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Activity/edge"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Activity/node"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_ConnectableElement"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Connector">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Connector/connectorEnd"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_CallOperationAction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_CallOperationAction/operation"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Action"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_ActivityNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_ActivityNode/incoming"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_ActivityNode/outgoing"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uml4sysml.ecore#//UML_ActivityNode/name"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_ActivityEdge">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_ActivityEdge/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_ActivityEdge/target"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_ValueSpecification"/>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_OpaqueExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uml4sysml.ecore#//UML_OpaqueExpression/body"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uml4sysml.ecore#//UML_OpaqueExpression/language"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_Constraint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_Constraint/specification"/>
+    </genClasses>
+    <genClasses ecoreClass="uml4sysml.ecore#//UML_ConnectorEnd">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference uml4sysml.ecore#//UML_ConnectorEnd/role"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,27 @@
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.core.emf_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.engine.emfvm_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\com.atl.common_0.5.6.201005251350.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.emftvm.compiler_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.common_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\ATLExtensions\ATLExtensions.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.core_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\jackson-all-1.9.9.jar
+E:\Eclipse Jave IDE\eclipse\plugins\slf4j-nop-1.6.1.jar
+
+Jars for ATL
+
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.common_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\com.atl.common_0.5.6.201005251350.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.emf.common_2.13.0.v20170609-0707.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.core_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.core.emf_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.core.runtime_3.13.0.v20170207-1030.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.gmf.runtime.emf.core_1.7.0.201706061437.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.gmf.runtime.emf.clipboard.core_1.7.0.201706061437.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.engine.emfvm_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.core.runtime-3.1.0.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.eclipse.m2m.atl.engine_3.8.0.v201705182014.jar
+E:\Eclipse Jave IDE\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar

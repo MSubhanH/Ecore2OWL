@@ -1,0 +1,10 @@
+@namespace(uri="http://eclipselabs.org/emf4sw/person", prefix="person")
+package person;
+
+
+class Person {
+   @Id(base = "http://www.emftriple.org/[Class]/")
+   @DataProperty(name = "name")
+   attr String name;
+   ref Person[*] knows;
+}

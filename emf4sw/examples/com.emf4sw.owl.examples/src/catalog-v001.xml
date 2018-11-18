@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1540918879782" name="http://eclipselabs.org/emf4sw/person" uri="Ontology%20files/person.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540918879782" name="http://example.org/family.ecore" uri="Family.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540918879782" name="http://specificationlayout" uri="New%20folder/specificationlayout.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540918879782" name="http://www.ebi.ac.uk/efo/swo/" uri="New%20folder/software.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540918879782" name="shadowed:http://eclipselabs.org/emf4sw/person" uri="New%20folder/person.owl"/>
+    </group>
+</catalog>
