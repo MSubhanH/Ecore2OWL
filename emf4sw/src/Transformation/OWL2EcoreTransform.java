@@ -35,7 +35,7 @@ public class OWL2EcoreTransform {
 	public String pathOwlFolder;
 	public String owlOntologyName;
 	
-	public OWL2EcoreTransform(String EcoreModelFolder, String EcoreModelName, String OWLOntologyFolder, String OWLOntologyName) throws  IOException, ParserConfigurationException, SAXException, TransformerException,  org.eclipse.m2m.atl.engine.emfvm.VMException, java.lang.ArrayStoreException {
+	public OWL2EcoreTransform(String EcoreModelFolder, String EcoreModelName, String OWLOntologyFolder, String OWLOntologyName) throws  IOException, ParserConfigurationException, SAXException, TransformerException,  java.lang.ArrayStoreException {
 		
 		pathEcoreFolder = EcoreModelFolder;
 		ecoreModelName = EcoreModelName;
