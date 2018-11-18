@@ -80,6 +80,6 @@
 	<classpathentry exported="true" kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/OWLAPI/trove4j-3.0.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/OWLAPI/xz-1.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/com.atl.common_0.5.6.201005251350.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/atl-commons"/>
+	<classpathentry kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/atl-commons.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
