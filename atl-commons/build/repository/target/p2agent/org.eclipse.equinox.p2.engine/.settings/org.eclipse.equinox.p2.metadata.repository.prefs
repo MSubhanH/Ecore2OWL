@@ -1,0 +1,27 @@
+#Thu May 19 19:52:46 IST 2011
+repositories/file\:_Users_guillaume_Tools_atl-commons_build_repository_target_targetPlatformRepository/isSystem=true
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common.feature_target/suffix=p2content.xml
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common.feature_target/version=noVersion
+repositories/file\:_Users_guillaume_Tools_atl-commons_build_repository_target_targetPlatformRepository/name=TychoTargetPlatform
+eclipse.preferences.version=1
+repositories/file\:_Users_guillaume_Tools_atl-commons_build_repository_target_targetPlatformRepository/uri=file\:/Users/guillaume/Tools/atl-commons/build/repository/target/targetPlatformRepository/
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common_target/isSystem=true
+repositories/file\:_Users_guillaume_Tools_atl-commons_build_repository_target_targetPlatformRepository/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common_target/enabled=false
+repositories/file\:_Users_guillaume_Tools_atl-commons_build_repository_target_targetPlatformRepository/suffix=content.xml
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common_target/name=noName
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common.feature_target/uri=file\:/Users/guillaume/Tools/atl-commons/com.atl.common.feature/target/
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common.feature_target/name=noName
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common_target/provider=
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common_target/uri=file\:/Users/guillaume/Tools/atl-commons/com.atl.common/target/
+repositories/file\:_Users_guillaume_Tools_atl-commons_build_repository_target_targetPlatformRepository/version=0.0.1
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common_target/description=
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common.feature_target/description=
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common.feature_target/provider=
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common_target/type=noType
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common_target/suffix=p2content.xml
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common_target/version=noVersion
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common.feature_target/type=noType
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common.feature_target/enabled=false
+repositories/file\:_Users_guillaume_Tools_atl-commons_build_repository_target_targetPlatformRepository/enabled=false
+repositories/file\:_Users_guillaume_Tools_atl-commons_com.atl.common.feature_target/isSystem=true

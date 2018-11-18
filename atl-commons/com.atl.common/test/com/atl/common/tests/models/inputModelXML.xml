@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Books xmlns="http://ex.org/Book">
+
+	<books title="livre">
+		<chapters title="chapter 1" nbPages="13" author="toto"/>
+		<chapters title="chapter 2" nbPages="17" author="toto"/>
+		<chapters title="chapter 3" nbPages="20" author="titi"/>
+	</books>
+	
+	<books title="article">
+		<chapters title="chapter 1" nbPages="13" author="Michel"/>
+		<chapters title="chapter 2" nbPages="1" author="David"/>
+	</books>
+	
+</Books>
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.atl.common.feature_0.7.1.qualifier.jar" id="com.atl.common.feature" version="0.7.1.qualifier">
+      <category name="atl.common"/>
+   </feature>
+   <category-def name="atl.common" label="atl commons">
+      <description>
+         atl commons
+      </description>
+   </category-def>
+   <category-def name="atl.common-source" label="atl.commons source"/>
+</site>

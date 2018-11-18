@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:atl="http://www.eclipse.org/gmt/2005/ATL" xmlns:ocl="http://www.eclipse.org/gmt/2005/OCL">
+  <atl:Module name="model2rdf">
+    <commentsBefore>-- @atlcompiler atl2006&#xA;</commentsBefore>
+    <inModels name="IN" metamodel="/2"/>
+    <outModels name="OUT" metamodel="/1"/>
+    <elements xsi:type="atl:Helper">
+      <definition>
+        <feature xsi:type="ocl:Attribute" name="graph">
+          <initExpression xsi:type="ocl:OclAnyType"/>
+          <type xsi:type="ocl:OclModelElement" name="RDFGraph" model="/1"/>
+        </feature>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:Helper">
+      <definition>
+        <feature xsi:type="ocl:Attribute" name="namespaces">
+          <initExpression xsi:type="ocl:MapExp">
+            <elements>
+              <key xsi:type="ocl:StringExp" stringSymbol="foaf"/>
+              <value xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/"/>
+            </elements>
+            <elements>
+              <key xsi:type="ocl:StringExp" stringSymbol="event"/>
+              <value xsi:type="ocl:StringExp" stringSymbol="http://purl.org/NET/c4dm/event.owl#"/>
+            </elements>
+            <elements>
+              <key xsi:type="ocl:StringExp" stringSymbol="tl"/>
+              <value xsi:type="ocl:StringExp" stringSymbol="http://purl.org/NET/c4dm/timeline.owl#"/>
+            </elements>
+            <elements>
+              <key xsi:type="ocl:StringExp" stringSymbol="dc"/>
+              <value xsi:type="ocl:StringExp" stringSymbol="http://purl.org/dc/elements/1.1/"/>
+            </elements>
+            <elements>
+              <key xsi:type="ocl:StringExp" stringSymbol="cal"/>
+              <value xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/cal/0.1/"/>
+            </elements>
+          </initExpression>
+          <type xsi:type="ocl:MapType">
+            <valueType xsi:type="ocl:StringType"/>
+            <keyType xsi:type="ocl:StringType"/>
+          </type>
+        </feature>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:Helper">
+      <definition>
+        <feature xsi:type="ocl:Operation" name="getEEnumValue">
+          <returnType xsi:type="ocl:StringType"/>
+          <body xsi:type="ocl:IfExp">
+            <thenExpression xsi:type="ocl:OperationCallExp" operationName="substring">
+              <source xsi:type="ocl:VariableExp" referredVariable="/68"/>
+              <arguments xsi:type="ocl:IntegerExp" integerSymbol="2"/>
+              <arguments xsi:type="ocl:OperationCallExp" operationName="size">
+                <source xsi:type="ocl:VariableExp" referredVariable="/68"/>
+              </arguments>
+            </thenExpression>
+            <condition xsi:type="ocl:OperationCallExp" operationName="startsWith">
+              <source xsi:type="ocl:VariableExp" referredVariable="/68"/>
+              <arguments xsi:type="ocl:StringExp" stringSymbol="#"/>
+            </condition>
+            <elseExpression xsi:type="ocl:VariableExp" referredVariable="/68"/>
+          </body>
+        </feature>
+        <context_>
+          <context_ xsi:type="ocl:StringType"/>
+        </context_>
+      </definition>
+    </elements>
+    <elements xsi:type="atl:CalledRule" name="init" isEntrypoint="true">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="r" variableExp="/0/@elements.3/@actionBlock/@statements.0/@value">
+          <type xsi:type="ocl:OclModelElement" name="RDFGraph" model="/1"/>
+          <bindings propertyName="namespaces">
+            <value xsi:type="ocl:IteratorExp" name="collect">
+              <source xsi:type="ocl:OperationCallExp" operationName="getKeys">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" name="namespaces">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/69"/>
+                </source>
+              </source>
+              <body xsi:type="ocl:OperationCallExp" operationName="addNamespace">
+                <source xsi:type="ocl:VariableExp" referredVariable="/69"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.3/@outPattern/@elements.0/@bindings.0/@value/@iterators.0"/>
+              </body>
+              <iterators varName="e" variableExp="/0/@elements.3/@outPattern/@elements.0/@bindings.0/@value/@body/@arguments.0"/>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <actionBlock>
+        <statements xsi:type="atl:BindingStat">
+          <source xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+            <source xsi:type="ocl:VariableExp" referredVariable="/69"/>
+          </source>
+          <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.3/@outPattern/@elements.0"/>
+        </statements>
+      </actionBlock>
+    </elements>
+    <elements xsi:type="atl:LazyMatchedRule" name="addNamespace">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="r">
+          <type xsi:type="ocl:OclModelElement" name="Namespace" model="/1"/>
+          <bindings propertyName="prefix">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.4/@inPattern/@elements.0"/>
+          </bindings>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:OperationCallExp" operationName="get">
+              <source xsi:type="ocl:NavigationOrAttributeCallExp" name="namespaces">
+                <source xsi:type="ocl:VariableExp" referredVariable="/70"/>
+              </source>
+              <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.4/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="ns" variableExp="/0/@elements.4/@outPattern/@elements.0/@bindings.0/@value /0/@elements.4/@outPattern/@elements.0/@bindings.1/@value/@arguments.0">
+          <type xsi:type="ocl:StringType"/>
+        </elements>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:MatchedRule" name="Calendar2Calendar">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="cc" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@arguments.0 /0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@arguments.0 /0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@body/@arguments.0 /0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@body/@arguments.0 /10/@source/@source /50/@source /51/@source">
+          <type xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/3"/>
+            </value>
+          </bindings>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="ID">
+              <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+          <bindings propertyName="subjectOf">
+            <value xsi:type="ocl:SequenceExp">
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectByURI">
+                <source xsi:type="ocl:VariableExp" referredVariable="/75"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/cal/0.1/Calendar"/>
+              </elements>
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectLiteral">
+                <source xsi:type="ocl:VariableExp" referredVariable="/76"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/name"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@variables.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+              </elements>
+              <elements xsi:type="ocl:IteratorExp" name="collect">
+                <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@variables.1"/>
+                <body xsi:type="ocl:OperationCallExp" operationName="makeTriple">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/77"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@outPattern/@elements.0"/>
+                  <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/cal/0.1/events"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@iterators.0"/>
+                </body>
+                <iterators varName="var" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@body/@arguments.2"/>
+              </elements>
+              <elements xsi:type="ocl:IteratorExp" name="collect">
+                <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@variables.2"/>
+                <body xsi:type="ocl:OperationCallExp" operationName="makeTriple">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/78"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@outPattern/@elements.0"/>
+                  <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/cal/0.1/profiles"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@iterators.0"/>
+                </body>
+                <iterators varName="var" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@body/@arguments.2"/>
+              </elements>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <variables varName="name" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@arguments.2">
+        <type xsi:type="ocl:StringType"/>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="name">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <variables varName="events" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@source">
+        <type xsi:type="ocl:SequenceType">
+          <elementType xsi:type="ocl:OclModelElement" name="Event" model="/2"/>
+        </type>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="events">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <variables varName="profiles" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@source">
+        <type xsi:type="ocl:SequenceType">
+          <elementType xsi:type="ocl:OclModelElement" name="Profile" model="/2"/>
+        </type>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="profiles">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="c" variableExp="/0/@elements.5/@inPattern/@filter/@source /0/@elements.5/@outPattern/@elements.0/@bindings.1/@value/@source /0/@elements.5/@variables.0/@initExpression/@source /0/@elements.5/@variables.1/@initExpression/@source /0/@elements.5/@variables.2/@initExpression/@source">
+          <type xsi:type="ocl:OclModelElement" name="Calendar" model="/2"/>
+        </elements>
+        <filter xsi:type="ocl:OperationCallExp" operationName="oclIsTypeOf">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@inPattern/@elements.0"/>
+          <arguments xsi:type="ocl:OclModelElement" name="Calendar" model="/2"/>
+        </filter>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:MatchedRule" name="Profile2Profile">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="pp" variableExp="/0/@elements.6/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@arguments.0 /0/@elements.6/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@arguments.0 /19/@source/@source">
+          <type xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/4"/>
+            </value>
+          </bindings>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="URI">
+              <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.6/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+          <bindings propertyName="subjectOf">
+            <value xsi:type="ocl:SequenceExp">
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectByURI">
+                <source xsi:type="ocl:VariableExp" referredVariable="/79"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.6/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/cal/0.1/Profile"/>
+              </elements>
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTriple">
+                <source xsi:type="ocl:VariableExp" referredVariable="/80"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.6/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/cal/0.1/user"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.6/@variables.0"/>
+              </elements>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <variables varName="user" variableExp="/0/@elements.6/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@arguments.2">
+        <type xsi:type="ocl:OclModelElement" name="Contact" model="/2"/>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="user">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.6/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="p" variableExp="/0/@elements.6/@inPattern/@filter/@source /0/@elements.6/@outPattern/@elements.0/@bindings.1/@value/@source /0/@elements.6/@variables.0/@initExpression/@source">
+          <type xsi:type="ocl:OclModelElement" name="Profile" model="/2"/>
+        </elements>
+        <filter xsi:type="ocl:OperationCallExp" operationName="oclIsTypeOf">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.6/@inPattern/@elements.0"/>
+          <arguments xsi:type="ocl:OclModelElement" name="Profile" model="/2"/>
+        </filter>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:MatchedRule" name="Event2Event">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="ee" variableExp="/0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@arguments.0 /0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@body/@arguments.0 /0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@arguments.0 /0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@arguments.0">
+          <type xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/5"/>
+            </value>
+          </bindings>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="URI">
+              <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+          <bindings propertyName="subjectOf">
+            <value xsi:type="ocl:SequenceExp">
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectByURI">
+                <source xsi:type="ocl:VariableExp" referredVariable="/81"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://purl.org/NET/c4dm/event.owl#Event"/>
+              </elements>
+              <elements xsi:type="ocl:IteratorExp" name="collect">
+                <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@variables.0"/>
+                <body xsi:type="ocl:OperationCallExp" operationName="makeTriple">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/82"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@outPattern/@elements.0"/>
+                  <arguments xsi:type="ocl:StringExp" stringSymbol="http://purl.org/NET/c4dm/event.owl#agent"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@iterators.0"/>
+                </body>
+                <iterators varName="var" variableExp="/0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@body/@arguments.2"/>
+              </elements>
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectLiteral">
+                <source xsi:type="ocl:VariableExp" referredVariable="/83"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://purl.org/NET/c4dm/timeline.owl#start"/>
+                <arguments xsi:type="ocl:OperatorCallExp" operationName="+">
+                  <source xsi:type="ocl:OperatorCallExp" operationName="+">
+                    <source xsi:type="ocl:OperatorCallExp" operationName="+">
+                      <source xsi:type="ocl:OperationCallExp" operationName="regexReplaceAll">
+                        <source xsi:type="ocl:NavigationOrAttributeCallExp" name="date">
+                          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@inPattern/@elements.0"/>
+                        </source>
+                        <arguments xsi:type="ocl:StringExp" stringSymbol="/"/>
+                        <arguments xsi:type="ocl:StringExp" stringSymbol="-"/>
+                      </source>
+                      <arguments xsi:type="ocl:StringExp" stringSymbol="T"/>
+                    </source>
+                    <arguments xsi:type="ocl:NavigationOrAttributeCallExp" name="startTime">
+                      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@inPattern/@elements.0"/>
+                    </arguments>
+                  </source>
+                  <arguments xsi:type="ocl:StringExp" stringSymbol="Z"/>
+                </arguments>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+              </elements>
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectLiteral">
+                <source xsi:type="ocl:VariableExp" referredVariable="/84"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://purl.org/NET/c4dm/timeline.owl#end"/>
+                <arguments xsi:type="ocl:OperatorCallExp" operationName="+">
+                  <source xsi:type="ocl:OperatorCallExp" operationName="+">
+                    <source xsi:type="ocl:OperatorCallExp" operationName="+">
+                      <source xsi:type="ocl:OperationCallExp" operationName="regexReplaceAll">
+                        <source xsi:type="ocl:NavigationOrAttributeCallExp" name="date">
+                          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@inPattern/@elements.0"/>
+                        </source>
+                        <arguments xsi:type="ocl:StringExp" stringSymbol="/"/>
+                        <arguments xsi:type="ocl:StringExp" stringSymbol="-"/>
+                      </source>
+                      <arguments xsi:type="ocl:StringExp" stringSymbol="T"/>
+                    </source>
+                    <arguments xsi:type="ocl:NavigationOrAttributeCallExp" name="endTime">
+                      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@inPattern/@elements.0"/>
+                    </arguments>
+                  </source>
+                  <arguments xsi:type="ocl:StringExp" stringSymbol="Z"/>
+                </arguments>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+              </elements>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <variables varName="att" variableExp="/0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@source">
+        <type xsi:type="ocl:SequenceType">
+          <elementType xsi:type="ocl:OclModelElement" name="Person" model="/2"/>
+        </type>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="attendees">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="e" variableExp="/0/@elements.7/@inPattern/@filter/@source /0/@elements.7/@outPattern/@elements.0/@bindings.1/@value/@source /0/@elements.7/@variables.0/@initExpression/@source /0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@arguments.2/@source/@source/@source/@source/@source /0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@arguments.2/@source/@arguments.0/@source /0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@arguments.2/@source/@source/@source/@source/@source /0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@arguments.2/@source/@arguments.0/@source">
+          <type xsi:type="ocl:OclModelElement" name="Event" model="/2"/>
+        </elements>
+        <filter xsi:type="ocl:OperationCallExp" operationName="oclIsTypeOf">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.7/@inPattern/@elements.0"/>
+          <arguments xsi:type="ocl:OclModelElement" name="Event" model="/2"/>
+        </filter>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:MatchedRule" name="Person2Person">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="pp" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@arguments.0 /0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@arguments.0 /0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@arguments.0 /0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@arguments.0 /0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.4/@body/@arguments.0 /0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.5/@arguments.0 /0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.6/@body/@arguments.0 /26/@source/@source /28/@source/@source /29/@source/@source /52/@source /31/@source/@source /32/@source/@source">
+          <type xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/6"/>
+            </value>
+          </bindings>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:OperatorCallExp" operationName="+">
+              <source xsi:type="ocl:StringExp" stringSymbol="http://Calendar.org/persons/"/>
+              <arguments xsi:type="ocl:OperationCallExp" operationName="trim">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" name="firstName">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@inPattern/@elements.0"/>
+                </source>
+              </arguments>
+            </value>
+          </bindings>
+          <bindings propertyName="subjectOf">
+            <value xsi:type="ocl:SequenceExp">
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectByURI">
+                <source xsi:type="ocl:VariableExp" referredVariable="/85"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/Person"/>
+              </elements>
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectLiteral">
+                <source xsi:type="ocl:VariableExp" referredVariable="/86"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/firstName"/>
+                <arguments xsi:type="ocl:NavigationOrAttributeCallExp" name="firstName">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@inPattern/@elements.0"/>
+                </arguments>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+              </elements>
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectLiteral">
+                <source xsi:type="ocl:VariableExp" referredVariable="/87"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/family_name"/>
+                <arguments xsi:type="ocl:NavigationOrAttributeCallExp" name="lastName">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@inPattern/@elements.0"/>
+                </arguments>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+              </elements>
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTriple">
+                <source xsi:type="ocl:VariableExp" referredVariable="/88"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/mbox"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@variables.0"/>
+              </elements>
+              <elements xsi:type="ocl:IteratorExp" name="collect">
+                <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@variables.1"/>
+                <body xsi:type="ocl:OperationCallExp" operationName="makeTriple">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/89"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+                  <arguments xsi:type="ocl:StringExp" stringSymbol="http://purl.org/dc/elements/1.1/description"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.4/@iterators.0"/>
+                </body>
+                <iterators varName="var" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.4/@body/@arguments.2"/>
+              </elements>
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTriple">
+                <source xsi:type="ocl:VariableExp" referredVariable="/90"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/img"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@variables.2"/>
+              </elements>
+              <elements xsi:type="ocl:IteratorExp" name="collect">
+                <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@variables.3"/>
+                <body xsi:type="ocl:OperationCallExp" operationName="makeTriple">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/91"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+                  <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/knows"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.6/@iterators.0"/>
+                </body>
+                <iterators varName="var" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.6/@body/@arguments.2"/>
+              </elements>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <variables varName="email" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@arguments.2">
+        <type xsi:type="ocl:StringType"/>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="email">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <variables varName="description" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.4/@source">
+        <type xsi:type="ocl:SequenceType">
+          <elementType xsi:type="ocl:StringType"/>
+        </type>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="description">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <variables varName="image" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.5/@arguments.2">
+        <type xsi:type="ocl:OclModelElement" name="Image" model="/2"/>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="image">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <variables varName="contacts" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.6/@source">
+        <type xsi:type="ocl:SequenceType">
+          <elementType xsi:type="ocl:OclModelElement" name="Contact" model="/2"/>
+        </type>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="contacts">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="p" variableExp="/0/@elements.8/@inPattern/@filter/@source /0/@elements.8/@variables.0/@initExpression/@source /0/@elements.8/@variables.1/@initExpression/@source /0/@elements.8/@variables.2/@initExpression/@source /0/@elements.8/@variables.3/@initExpression/@source /0/@elements.8/@outPattern/@elements.0/@bindings.1/@value/@arguments.0/@source/@source /0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@arguments.2/@source /0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@arguments.2/@source">
+          <type xsi:type="ocl:OclModelElement" name="Person" model="/2"/>
+        </elements>
+        <filter xsi:type="ocl:OperationCallExp" operationName="oclIsTypeOf">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@inPattern/@elements.0"/>
+          <arguments xsi:type="ocl:OclModelElement" name="Person" model="/2"/>
+        </filter>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:MatchedRule" name="Group2Group">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="gg" variableExp="/0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@arguments.0 /0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@arguments.0 /0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@body/@arguments.0 /42/@source/@source /53/@source">
+          <type xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/7"/>
+            </value>
+          </bindings>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:OperatorCallExp" operationName="+">
+              <source xsi:type="ocl:StringExp" stringSymbol="http://Calendar.org/groups/"/>
+              <arguments xsi:type="ocl:OperationCallExp" operationName="trim">
+                <source xsi:type="ocl:NavigationOrAttributeCallExp" name="name">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@inPattern/@elements.0"/>
+                </source>
+              </arguments>
+            </value>
+          </bindings>
+          <bindings propertyName="subjectOf">
+            <value xsi:type="ocl:SequenceExp">
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectByURI">
+                <source xsi:type="ocl:VariableExp" referredVariable="/92"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/Group"/>
+              </elements>
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectLiteral">
+                <source xsi:type="ocl:VariableExp" referredVariable="/93"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/name"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@variables.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+              </elements>
+              <elements xsi:type="ocl:IteratorExp" name="collect">
+                <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@variables.1"/>
+                <body xsi:type="ocl:OperationCallExp" operationName="makeTriple">
+                  <source xsi:type="ocl:VariableExp" referredVariable="/94"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@outPattern/@elements.0"/>
+                  <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/knows"/>
+                  <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@iterators.0"/>
+                </body>
+                <iterators varName="var" variableExp="/0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@body/@arguments.2"/>
+              </elements>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <variables varName="name" variableExp="/0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@arguments.2">
+        <type xsi:type="ocl:StringType"/>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="name">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <variables varName="contacts" variableExp="/0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@source">
+        <type xsi:type="ocl:SequenceType">
+          <elementType xsi:type="ocl:OclModelElement" name="Contact" model="/2"/>
+        </type>
+        <initExpression xsi:type="ocl:NavigationOrAttributeCallExp" name="contacts">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@inPattern/@elements.0"/>
+        </initExpression>
+      </variables>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="g" variableExp="/0/@elements.9/@inPattern/@filter/@source /0/@elements.9/@variables.0/@initExpression/@source /0/@elements.9/@variables.1/@initExpression/@source /0/@elements.9/@outPattern/@elements.0/@bindings.1/@value/@arguments.0/@source/@source">
+          <type xsi:type="ocl:OclModelElement" name="Group" model="/2"/>
+        </elements>
+        <filter xsi:type="ocl:OperationCallExp" operationName="oclIsTypeOf">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@inPattern/@elements.0"/>
+          <arguments xsi:type="ocl:OclModelElement" name="Group" model="/2"/>
+        </filter>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:MatchedRule" name="Image2Image">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="ii" variableExp="/0/@elements.10/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@arguments.0">
+          <type xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/8"/>
+            </value>
+          </bindings>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="location">
+              <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.10/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+          <bindings propertyName="subjectOf">
+            <value xsi:type="ocl:SequenceExp">
+              <elements xsi:type="ocl:OperationCallExp" operationName="makeTripleWithObjectByURI">
+                <source xsi:type="ocl:VariableExp" referredVariable="/95"/>
+                <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.10/@outPattern/@elements.0"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/Image"/>
+              </elements>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="i" variableExp="/0/@elements.10/@inPattern/@filter/@source /0/@elements.10/@outPattern/@elements.0/@bindings.1/@value/@source">
+          <type xsi:type="ocl:OclModelElement" name="Image" model="/2"/>
+        </elements>
+        <filter xsi:type="ocl:OperationCallExp" operationName="oclIsTypeOf">
+          <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.10/@inPattern/@elements.0"/>
+          <arguments xsi:type="ocl:OclModelElement" name="Image" model="/2"/>
+        </filter>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:LazyMatchedRule" name="makeTriple">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="r">
+          <type xsi:type="ocl:OclModelElement" name="Triple" model="/1"/>
+          <bindings propertyName="subject">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.11/@inPattern/@elements.0"/>
+          </bindings>
+          <bindings propertyName="predicate">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.11/@outPattern/@elements.1"/>
+          </bindings>
+          <bindings propertyName="object">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.11/@inPattern/@elements.2"/>
+          </bindings>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/71"/>
+            </value>
+          </bindings>
+        </elements>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="predicate_" variableExp="/0/@elements.11/@outPattern/@elements.0/@bindings.1/@value">
+          <type xsi:type="ocl:OclModelElement" name="Property" model="/1"/>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.11/@inPattern/@elements.1"/>
+          </bindings>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/71"/>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="s" variableExp="/0/@elements.11/@outPattern/@elements.0/@bindings.0/@value">
+          <type xsi:type="ocl:OclAnyType"/>
+        </elements>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="p" variableExp="/0/@elements.11/@outPattern/@elements.1/@bindings.0/@value">
+          <type xsi:type="ocl:StringType"/>
+        </elements>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="o" variableExp="/0/@elements.11/@outPattern/@elements.0/@bindings.2/@value">
+          <type xsi:type="ocl:OclAnyType"/>
+        </elements>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:LazyMatchedRule" name="makeTripleWithObjectLiteral">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="r">
+          <type xsi:type="ocl:OclModelElement" name="Triple" model="/1"/>
+          <bindings propertyName="subject">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.12/@inPattern/@elements.0"/>
+          </bindings>
+          <bindings propertyName="predicate">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.12/@outPattern/@elements.1"/>
+          </bindings>
+          <bindings propertyName="object">
+            <value xsi:type="ocl:OperationCallExp" operationName="OclAny2Literal">
+              <source xsi:type="ocl:VariableExp" referredVariable="/72"/>
+              <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.12/@inPattern/@elements.2"/>
+              <arguments xsi:type="ocl:VariableExp" referredVariable="/0/@elements.12/@inPattern/@elements.3"/>
+            </value>
+          </bindings>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/72"/>
+            </value>
+          </bindings>
+        </elements>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="predicate_" variableExp="/0/@elements.12/@outPattern/@elements.0/@bindings.1/@value">
+          <type xsi:type="ocl:OclModelElement" name="Property" model="/1"/>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.12/@inPattern/@elements.1"/>
+          </bindings>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/72"/>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="s" variableExp="/0/@elements.12/@outPattern/@elements.0/@bindings.0/@value">
+          <type xsi:type="ocl:OclAnyType"/>
+        </elements>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="p" variableExp="/0/@elements.12/@outPattern/@elements.1/@bindings.0/@value">
+          <type xsi:type="ocl:StringType"/>
+        </elements>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="o" variableExp="/0/@elements.12/@outPattern/@elements.0/@bindings.2/@value/@arguments.0">
+          <type xsi:type="ocl:OclAnyType"/>
+        </elements>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="t" variableExp="/0/@elements.12/@outPattern/@elements.0/@bindings.2/@value/@arguments.1">
+          <type xsi:type="ocl:StringType"/>
+        </elements>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:LazyMatchedRule" name="makeTripleWithObjectByURI">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="r">
+          <type xsi:type="ocl:OclModelElement" name="Triple" model="/1"/>
+          <bindings propertyName="subject">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.13/@inPattern/@elements.0"/>
+          </bindings>
+          <bindings propertyName="predicate">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.13/@outPattern/@elements.1"/>
+          </bindings>
+          <bindings propertyName="object">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.13/@outPattern/@elements.2"/>
+          </bindings>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/73"/>
+            </value>
+          </bindings>
+        </elements>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="predicate_" variableExp="/0/@elements.13/@outPattern/@elements.0/@bindings.1/@value">
+          <type xsi:type="ocl:OclModelElement" name="Property" model="/1"/>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.13/@inPattern/@elements.1"/>
+          </bindings>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/73"/>
+            </value>
+          </bindings>
+        </elements>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="object_" variableExp="/0/@elements.13/@outPattern/@elements.0/@bindings.2/@value">
+          <type xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.13/@inPattern/@elements.2"/>
+          </bindings>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/73"/>
+            </value>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="s" variableExp="/0/@elements.13/@outPattern/@elements.0/@bindings.0/@value">
+          <type xsi:type="ocl:OclAnyType"/>
+        </elements>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="p" variableExp="/0/@elements.13/@outPattern/@elements.1/@bindings.0/@value">
+          <type xsi:type="ocl:StringType"/>
+        </elements>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="o" variableExp="/0/@elements.13/@outPattern/@elements.2/@bindings.0/@value">
+          <type xsi:type="ocl:StringType"/>
+        </elements>
+      </inPattern>
+    </elements>
+    <elements xsi:type="atl:LazyMatchedRule" name="OclAny2Literal">
+      <outPattern>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="r">
+          <type xsi:type="ocl:OclModelElement" name="TypedLiteral" model="/1"/>
+          <bindings propertyName="lexicalForm">
+            <value xsi:type="ocl:OperationCallExp" operationName="toString">
+              <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.14/@inPattern/@elements.0"/>
+            </value>
+          </bindings>
+          <bindings propertyName="datatypeURI">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.14/@outPattern/@elements.1"/>
+          </bindings>
+          <bindings propertyName="graph">
+            <value xsi:type="ocl:NavigationOrAttributeCallExp" name="graph">
+              <source xsi:type="ocl:VariableExp" referredVariable="/74"/>
+            </value>
+          </bindings>
+        </elements>
+        <elements xsi:type="atl:SimpleOutPatternElement" varName="type_" variableExp="/0/@elements.14/@outPattern/@elements.0/@bindings.1/@value">
+          <type xsi:type="ocl:OclModelElement" name="Datatype" model="/1"/>
+          <bindings propertyName="URI">
+            <value xsi:type="ocl:VariableExp" referredVariable="/0/@elements.14/@inPattern/@elements.1"/>
+          </bindings>
+        </elements>
+      </outPattern>
+      <inPattern>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="o" variableExp="/0/@elements.14/@outPattern/@elements.0/@bindings.0/@value/@source">
+          <type xsi:type="ocl:OclAnyType"/>
+        </elements>
+        <elements xsi:type="atl:SimpleInPatternElement" varName="t" variableExp="/0/@elements.14/@outPattern/@elements.1/@bindings.0/@value">
+          <type xsi:type="ocl:StringType"/>
+        </elements>
+      </inPattern>
+    </elements>
+  </atl:Module>
+  <ocl:OclModel name="RDF" elements="/0/@elements.0/@definition/@feature/@type /0/@elements.3/@outPattern/@elements.0/@type /0/@elements.4/@outPattern/@elements.0/@type /0/@elements.11/@outPattern/@elements.0/@type /0/@elements.11/@outPattern/@elements.1/@type /0/@elements.12/@outPattern/@elements.0/@type /0/@elements.12/@outPattern/@elements.1/@type /0/@elements.13/@outPattern/@elements.0/@type /0/@elements.13/@outPattern/@elements.1/@type /0/@elements.13/@outPattern/@elements.2/@type /0/@elements.14/@outPattern/@elements.0/@type /0/@elements.14/@outPattern/@elements.1/@type /0/@elements.5/@outPattern/@elements.0/@type /0/@elements.6/@outPattern/@elements.0/@type /0/@elements.7/@outPattern/@elements.0/@type /0/@elements.8/@outPattern/@elements.0/@type /0/@elements.9/@outPattern/@elements.0/@type /0/@elements.10/@outPattern/@elements.0/@type /54 /11/@elementType /12/@elementType /55 /56 /57 /58 /59 /30/@elementType /60 /43/@elementType /61" model="/0/@outModels.0"/>
+  <ocl:OclModel name="MODEL" elements="/0/@elements.5/@inPattern/@filter/@arguments.0 /0/@elements.6/@inPattern/@filter/@arguments.0 /0/@elements.7/@inPattern/@filter/@arguments.0 /0/@elements.8/@inPattern/@filter/@arguments.0 /0/@elements.9/@inPattern/@filter/@arguments.0 /0/@elements.10/@inPattern/@filter/@arguments.0 /0/@elements.5/@inPattern/@elements.0/@type /0/@elements.6/@inPattern/@elements.0/@type /0/@elements.7/@inPattern/@elements.0/@type /0/@elements.8/@inPattern/@elements.0/@type /0/@elements.9/@inPattern/@elements.0/@type /0/@elements.10/@inPattern/@elements.0/@type /62 /0/@elements.5/@variables.1/@type/@elementType /0/@elements.5/@variables.2/@type/@elementType /63 /0/@elements.6/@variables.0/@type /64 /0/@elements.7/@variables.0/@type/@elementType /65 /0/@elements.8/@variables.2/@type /0/@elements.8/@variables.3/@type/@elementType /66 /0/@elements.9/@variables.1/@type/@elementType /67" model="/0/@inModels.0"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.0/@value/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.6/@outPattern/@elements.0/@bindings.0/@value/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.7/@outPattern/@elements.0/@bindings.0/@value/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.0/@value/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.9/@outPattern/@elements.0/@bindings.0/@value/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.10/@outPattern/@elements.0/@bindings.0/@value/@source"/>
+  <ocl:StringType/>
+  <ocl:CollectionOperationCallExp operationName="first">
+    <source xsi:type="ocl:OperationCallExp" operationName="getValues">
+      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@outPattern/@elements.0"/>
+      <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/name"/>
+    </source>
+  </ocl:CollectionOperationCallExp>
+  <ocl:SequenceType>
+    <elementType xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+  </ocl:SequenceType>
+  <ocl:SequenceType>
+    <elementType xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+  </ocl:SequenceType>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:CollectionOperationCallExp operationName="first">
+    <source xsi:type="ocl:OperationCallExp" operationName="getValues">
+      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.6/@outPattern/@elements.0"/>
+      <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/cal/0.1/user"/>
+    </source>
+  </ocl:CollectionOperationCallExp>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:StringType/>
+  <ocl:StringExp stringSymbol="http://Calendar.org/events"/>
+  <ocl:VariableExp/>
+  <ocl:StringType/>
+  <ocl:CollectionOperationCallExp operationName="first">
+    <source xsi:type="ocl:OperationCallExp" operationName="getValues">
+      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+      <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/mbox"/>
+    </source>
+  </ocl:CollectionOperationCallExp>
+  <ocl:SequenceType>
+    <elementType xsi:type="ocl:StringType"/>
+  </ocl:SequenceType>
+  <ocl:CollectionOperationCallExp operationName="first">
+    <source xsi:type="ocl:OperationCallExp" operationName="getValues">
+      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+      <arguments xsi:type="ocl:StringExp" stringSymbol="http://purl.org/dc/elements/1.1/description"/>
+    </source>
+  </ocl:CollectionOperationCallExp>
+  <ocl:CollectionOperationCallExp operationName="first">
+    <source xsi:type="ocl:OperationCallExp" operationName="getValues">
+      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+      <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/img"/>
+    </source>
+  </ocl:CollectionOperationCallExp>
+  <ocl:SequenceType>
+    <elementType xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+  </ocl:SequenceType>
+  <ocl:OperationCallExp operationName="first">
+    <source xsi:type="ocl:OperationCallExp" operationName="getValues">
+      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+      <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/firstName"/>
+    </source>
+  </ocl:OperationCallExp>
+  <ocl:OperationCallExp operationName="first">
+    <source xsi:type="ocl:OperationCallExp" operationName="getValues">
+      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+      <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/family_name"/>
+    </source>
+  </ocl:OperationCallExp>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:StringType/>
+  <ocl:CollectionOperationCallExp operationName="first">
+    <source xsi:type="ocl:OperationCallExp" operationName="getValues">
+      <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@outPattern/@elements.0"/>
+      <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/name"/>
+    </source>
+  </ocl:CollectionOperationCallExp>
+  <ocl:SequenceType>
+    <elementType xsi:type="ocl:OclModelElement" name="Resource" model="/1"/>
+  </ocl:SequenceType>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:VariableExp/>
+  <ocl:StringType/>
+  <ocl:StringExp stringSymbol="http://Calendar.org/images/"/>
+  <ocl:OperationCallExp operationName="getValues">
+    <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@outPattern/@elements.0"/>
+    <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/cal/0.1/events"/>
+  </ocl:OperationCallExp>
+  <ocl:OperationCallExp operationName="getValues">
+    <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.5/@outPattern/@elements.0"/>
+    <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/cal/0.1/profiles"/>
+  </ocl:OperationCallExp>
+  <ocl:OperationCallExp operationName="getValues">
+    <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.8/@outPattern/@elements.0"/>
+    <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/knows"/>
+  </ocl:OperationCallExp>
+  <ocl:OperationCallExp operationName="getValues">
+    <source xsi:type="ocl:VariableExp" referredVariable="/0/@elements.9/@outPattern/@elements.0"/>
+    <arguments xsi:type="ocl:StringExp" stringSymbol="http://xmlns.com/foaf/0.1/knows"/>
+  </ocl:OperationCallExp>
+  <ocl:OclModelElement name="Resource" model="/1"/>
+  <ocl:OclModelElement name="Resource" model="/1"/>
+  <ocl:OclModelElement name="Resource" model="/1"/>
+  <ocl:OclModelElement name="Resource" model="/1"/>
+  <ocl:OclModelElement name="Resource" model="/1"/>
+  <ocl:OclModelElement name="Resource" model="/1"/>
+  <ocl:OclModelElement name="Resource" model="/1"/>
+  <ocl:OclModelElement name="Resource" model="/1"/>
+  <ocl:OclModelElement name="Calendar" model="/2"/>
+  <ocl:OclModelElement name="Profile" model="/2"/>
+  <ocl:OclModelElement name="Event" model="/2"/>
+  <ocl:OclModelElement name="Person" model="/2"/>
+  <ocl:OclModelElement name="Group" model="/2"/>
+  <ocl:OclModelElement name="Image" model="/2"/>
+  <ocl:VariableDeclaration varName="self" variableExp="/0/@elements.2/@definition/@feature/@body/@condition/@source /0/@elements.2/@definition/@feature/@body/@thenExpression/@source /0/@elements.2/@definition/@feature/@body/@thenExpression/@arguments.1/@source /0/@elements.2/@definition/@feature/@body/@elseExpression"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.3/@outPattern/@elements.0/@bindings.0/@value/@source/@source/@source /0/@elements.3/@outPattern/@elements.0/@bindings.0/@value/@body/@source /0/@elements.3/@actionBlock/@statements.0/@source/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.4/@outPattern/@elements.0/@bindings.1/@value/@source/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.11/@outPattern/@elements.0/@bindings.3/@value/@source /0/@elements.11/@outPattern/@elements.1/@bindings.1/@value/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.12/@outPattern/@elements.0/@bindings.2/@value/@source /0/@elements.12/@outPattern/@elements.0/@bindings.3/@value/@source /0/@elements.12/@outPattern/@elements.1/@bindings.1/@value/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.13/@outPattern/@elements.0/@bindings.3/@value/@source /0/@elements.13/@outPattern/@elements.1/@bindings.1/@value/@source /0/@elements.13/@outPattern/@elements.2/@bindings.1/@value/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.14/@outPattern/@elements.0/@bindings.2/@value/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@body/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.5/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@body/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.6/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.6/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@body/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.7/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.3/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.4/@body/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.5/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.8/@outPattern/@elements.0/@bindings.2/@value/@elements.6/@body/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.1/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.9/@outPattern/@elements.0/@bindings.2/@value/@elements.2/@body/@source"/>
+  <ocl:VariableDeclaration varName="thisModule" variableExp="/0/@elements.10/@outPattern/@elements.0/@bindings.2/@value/@elements.0/@source"/>
+</xmi:XMI>

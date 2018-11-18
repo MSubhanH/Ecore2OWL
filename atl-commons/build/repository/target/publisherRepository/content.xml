@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='publisher repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1305831166450'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <units size='1'>
+    <unit id='201105191952.atl.common' version='1.0.0.07C1cJL9nh773553C5K5KC7'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='atl commons'/>
+        <property name='org.eclipse.equinox.p2.description' value='atl commons'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='201105191952.atl.common' version='1.0.0.07C1cJL9nh773553C5K5KC7'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.atl.common.feature.feature.group' range='[0.7.1.201105191952,0.7.1.201105191952]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+  </units>
+</repository>

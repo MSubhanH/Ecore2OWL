@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.ecore.dynamic_package">
+      <resource
+            uri="http://com.atl.commons/2010/Properties"
+            location="bin/com.atl.common.models.Properties.ecore">
+      </resource>
+   </extension>
+    <extension
+         point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            class="com.atl.common.models.resource.ATLResourceFactory"
+            type="atl">
+      </parser>
+   </extension>
+
+</plugin>

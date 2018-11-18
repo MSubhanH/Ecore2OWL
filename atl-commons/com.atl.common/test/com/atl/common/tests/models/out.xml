@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Publication:Store xmlns:Publication="http://ex.org/Publication">
+  <publications title="livre" authors="titi and toto" nbPages="50"/>
+  <publications title="article" authors="David and Michel" nbPages="14"/>
+</Publication:Store>

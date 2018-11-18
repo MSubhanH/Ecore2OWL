@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: atl-commons
+Bundle-SymbolicName: com.atl.common;singleton:=true
+Bundle-Version: 0.7.1.qualifier
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: 
+ com.atl.common.models,
+ com.atl.common.models.extensions,
+ com.atl.common.models.resource,
+ com.atl.common.query,
+ com.atl.common.trans,
+ com.atl.common.utils
+Require-Bundle: org.eclipse.emf.ecore;bundle-version="2.5.0",
+ org.eclipse.m2m.atl.engine.emfvm;bundle-version="3.1.0";visibility:=reexport,
+ org.eclipse.m2m.atl.engine;bundle-version="3.1.0";visibility:=reexport,
+ org.eclipse.m2m.atl.dsls;bundle-version="3.1.0";visibility:=reexport,
+ org.junit4;bundle-version="4.0.0";resolution:=optional
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: eclipselabs

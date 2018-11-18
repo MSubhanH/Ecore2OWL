@@ -1,0 +1,1401 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='TychoTargetPlatform' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='0.0.1'>
+  <units size='34'>
+    <unit id='org.eclipse.emf.ecore.xmi' version='2.5.0.v20100521-1846'>
+      <update id='org.eclipse.emf.ecore.xmi' range='[0.0.0,2.5.0.v20100521-1846)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='EMF XML/XMI Persistence'/>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore.xmi' version='2.5.0.v20100521-1846'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' version='2.5.0.v20100521-1846'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xmi' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xmi.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xmi.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.6.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='[2.6.0,3.0.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.xmi' version='2.5.0.v20100521-1846'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Created-By: 2.3 (IBM Corporation)&#xA;Manifest-Version: 1.0&#xA;Bundle-Name: %pluginName&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ClassPath: .&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Export-Package: org.eclipse.emf.ecore.xmi,org.eclipse.emf.ecore.xmi.impl,org.eclipse.emf.ecore.xmi.util&#xA;Bundle-Version: 2.5.0.v20100521-1846&#xA;Bundle-Activator: org.eclipse.emf.ecore.xmi.XMIPlugin$Implementation&#xA;Require-Bundle: org.eclipse.core.runtime;bundle-version=&quot;[3.6.0,4.0.0)&quot;,org.eclipse.emf.ecore;visibility:=&quot;reexport&quot;;bundle-version=&quot;[2.6.0,3.0.0)&quot;&#xA;Eclipse-LazyStart: true&#xA;Bundle-SymbolicName: org.eclipse.emf.ecore.xmi; singleton:=true&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.core.jobs' version='3.5.1.R36x_v20100824'>
+      <update id='org.eclipse.core.jobs' range='[0.0.0,3.5.1.R36x_v20100824)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Eclipse Jobs Mechanism'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.jobs' version='3.5.1.R36x_v20100824'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.core.jobs' version='3.5.1.R36x_v20100824'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.jobs' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime.jobs' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.2.0,4.0.0)'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.debug' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.util' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.framework' range='1.3.0'/>
+        <required namespace='java.package' name='org.osgi.service.packageadmin' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.util.tracker' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.core.jobs' version='3.5.1.R36x_v20100824'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: %pluginName&#xA;Bundle-Version: 3.5.1.R36x_v20100824&#xA;Eclipse-LazyStart: true&#xA;Import-Package: org.eclipse.osgi.service.debug,org.eclipse.osgi.util,org.osgi.framework;version=&quot;1.3.0&quot;,org.osgi.service.packageadmin,org.osgi.util.tracker&#xA;Bundle-Activator: org.eclipse.core.internal.jobs.JobActivator&#xA;Bundle-Vendor: %providerName&#xA;Require-Bundle: org.eclipse.equinox.common;bundle-version=&quot;[3.2.0,4.0.0)&quot;&#xA;Export-Package: org.eclipse.core.internal.jobs;x-internal:=true,org.eclipse.core.runtime.jobs&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.core.jobs;tag=R36x_v20100824&#xA;Bundle-SymbolicName: org.eclipse.core.jobs; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: CDC-1.0/Foundation-1.0,J2SE-1.3&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.debug.core' version='3.6.0.v20100519'>
+      <update id='org.eclipse.debug.core' range='[0.0.0,3.6.0.v20100519)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Debug Core'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='14'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.debug.core' version='3.6.0.v20100519'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.debug.core' version='3.6.0.v20100519'/>
+        <provided namespace='java.package' name='org.eclipse.debug.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.debug.core.commands' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.debug.core.model' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.debug.core.sourcelookup' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.debug.core.sourcelookup.containers' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.debug.internal.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.debug.internal.core.commands' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.debug.internal.core.sourcelookup' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.debug.internal.core.sourcelookup.containers' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.debug.internal.core.variables' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='[3.5.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.variables' range='[3.2.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.5.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.filesystem' range='[1.2.0,2.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='[3.4.0,4.0.0)'/>
+        <required namespace='java.package' name='com.ibm.icu.text' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.debug.core' version='3.6.0.v20100519'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: %pluginName&#xA;Bundle-ClassPath: .&#xA;Require-Bundle: org.eclipse.core.resources;bundle-version=&quot;[3.5.0,4.0.0)&quot;;visibility:=reexport,org.eclipse.core.variables;bundle-version=&quot;[3.2.0,4.0.0)&quot;,org.eclipse.core.runtime;bundle-version=&quot;[3.5.0,4.0.0)&quot;,org.eclipse.core.filesystem;bundle-version=&quot;[1.2.0,2.0.0)&quot;,org.eclipse.core.expressions;bundle-version=&quot;[3.4.0,4.0.0)&quot;&#xA;Bundle-Activator: org.eclipse.debug.core.DebugPlugin&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.debug.core;tag=v20100519&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 3.6.0.v20100519&#xA;Bundle-Localization: plugin&#xA;Export-Package: org.eclipse.debug.core,org.eclipse.debug.core.commands,org.eclipse.debug.core.model,org.eclipse.debug.core.sourcelookup,org.eclipse.debug.core.sourcelookup.containers,org.eclipse.debug.internal.core;x-friends:=&quot;org.eclipse.debug.ui&quot;,org.eclipse.debug.internal.core.commands;x-friends:=&quot;org.eclipse.debug.ui&quot;,org.eclipse.debug.internal.core.sourcelookup;x-friends:=&quot;org.eclipse.debug.ui&quot;,org.eclipse.debug.internal.core.sourcelookup.containers;x-friends:=&quot;org.eclipse.debug.ui&quot;,org.eclipse.debug.internal.core.variables;x-friends:=&quot;org.eclipse.debug.ui&quot;&#xA;Bundle-SymbolicName: org.eclipse.debug.core; singleton:=true&#xA;Import-Package: com.ibm.icu.text
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.m2m.atl.debug.core' version='3.1.2.v20110119-0755'>
+      <update id='org.eclipse.m2m.atl.debug.core' range='[0.0.0,3.1.2.v20110119-0755)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='df_LT.pluginName' value='ATL Core Debug'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.m2m.atl.debug.core' version='3.1.2.v20110119-0755'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.m2m.atl.debug.core' version='3.1.2.v20110119-0755'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.debug.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.debug.core.adwp' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='4'>
+        <required namespace='osgi.bundle' name='org.eclipse.debug.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.common' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.core' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.m2m.atl.debug.core' version='3.1.2.v20110119-0755'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: %pluginName&#xA;Bundle-Version: 3.1.2.v20110119-0755&#xA;Bundle-Activator: org.eclipse.m2m.atl.debug.core.AtlCoreDebugPlugin&#xA;Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)&#xA;Bundle-Vendor: %providerName&#xA;Require-Bundle: org.eclipse.debug.core;visibility:=reexport,org.eclipse.core.runtime,org.eclipse.m2m.atl.common,org.eclipse.m2m.atl.core;visibility:=reexport&#xA;Export-Package: org.eclipse.m2m.atl.debug.core,org.eclipse.m2m.atl.debug.core.adwp&#xA;Bundle-SymbolicName: org.eclipse.m2m.atl.debug.core;singleton:=true&#xA;Manifest-Version: 1.0&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.m2m.atl.core' version='3.1.2.v20110119-0755'>
+      <update id='org.eclipse.m2m.atl.core' range='[0.0.0,3.1.2.v20110119-0755)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='df_LT.pluginName' value='ATL Core API'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.m2m.atl.core' version='3.1.2.v20110119-0755'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.m2m.atl.core' version='3.1.2.v20110119-0755'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.core.launch' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.core.service' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.m2m.atl.core' version='3.1.2.v20110119-0755'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Bundle-Name: %pluginName&#xA;Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: org.eclipse.m2m.atl.core;singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 3.1.2.v20110119-0755&#xA;Bundle-Localization: plugin&#xA;Export-Package: org.eclipse.m2m.atl.core,org.eclipse.m2m.atl.core.launch;uses:=&quot;org.eclipse.m2m.atl.core&quot;,org.eclipse.m2m.atl.core.service;uses:=&quot;org.eclipse.m2m.atl.core,org.eclipse.m2m.atl.core.launch&quot;&#xA;Require-Bundle: org.eclipse.core.runtime;visibility:=reexport
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.ant.core' version='3.2.201.v20110203_r362'>
+      <update id='org.eclipse.ant.core' range='[0.0.0,3.2.201.v20110203_r362)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Ant Build Tool Core'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ant.core' version='3.2.201.v20110203_r362'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.ant.core' version='3.2.201.v20110203_r362'/>
+        <provided namespace='java.package' name='org.eclipse.ant.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.ant.internal.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.ant.internal.core.contentDescriber' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.variables' range='[3.1.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.2.0,4.0.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.ant.core' version='3.2.201.v20110203_r362'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: org.eclipse.ant.core.AntCorePlugin&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.ant.core;tag=v20110203_r362&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ActivationPolicy: lazy;exclude:=&quot;org.eclipse.ant.internal.core.contentDescriber&quot;&#xA;Bundle-SymbolicName: org.eclipse.ant.core; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 3.2.201.v20110203_r362&#xA;Bundle-Localization: plugin&#xA;Export-Package: org.eclipse.ant.core,org.eclipse.ant.internal.core;x-friends:=&quot;org.eclipse.ant.ui,org.eclipse.ant.launching&quot;,org.eclipse.ant.internal.core.contentDescriber;x-internal:=true&#xA;Require-Bundle: org.eclipse.core.variables;bundle-version=&quot;[3.1.0,4.0.0)&quot;,org.eclipse.core.runtime;bundle-version=&quot;[3.2.0,4.0.0)&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.core.expressions' version='3.4.200.v20100505'>
+      <update id='org.eclipse.core.expressions' range='[0.0.0,3.4.200.v20100505)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Expression Language'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.expressions' version='3.4.200.v20100505'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.core.expressions' version='3.4.200.v20100505'/>
+        <provided namespace='java.package' name='org.eclipse.core.expressions' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.expressions' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.expressions.propertytester' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.expressions.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.3.0,4.0.0)'/>
+        <required namespace='java.package' name='org.w3c.dom' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.core.expressions' version='3.4.200.v20100505'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4,CDC-1.0/Foundation-1.0,J2SE-1.3&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: %pluginName&#xA;Bundle-ClassPath: .&#xA;Require-Bundle: org.eclipse.core.runtime;bundle-version=&quot;[3.3.0,4.0.0)&quot;&#xA;Bundle-Activator: org.eclipse.core.internal.expressions.ExpressionPlugin&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.core.expressions;tag=v20100505&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 3.4.200.v20100505&#xA;Bundle-Localization: plugin&#xA;Export-Package: org.eclipse.core.expressions,org.eclipse.core.internal.expressions;x-internal:=true,org.eclipse.core.internal.expressions.propertytester;x-internal:=true,org.eclipse.core.internal.expressions.util;x-internal:=true&#xA;Bundle-SymbolicName: org.eclipse.core.expressions; singleton:=true&#xA;Import-Package: org.w3c.dom
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.equinox.servletbridge.extensionbundle' version='1.2.0.v20100503' singleton='false'>
+      <update id='org.eclipse.equinox.servletbridge.extensionbundle' range='[0.0.0,1.2.0.v20100503)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='Servletbridge Extension bundle'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='java.package' name='javax.servlet' version='2.5.0'/>
+        <provided namespace='java.package' name='org.eclipse.equinox.servletbridge' version='1.1.0'/>
+        <provided namespace='java.package' name='javax.servlet.http' version='2.5.0'/>
+        <provided namespace='java.package' name='javax.servlet.resources' version='2.5.0'/>
+        <provided namespace='osgi.fragment' name='org.eclipse.osgi' version='1.2.0.v20100503'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.servletbridge.extensionbundle' version='1.2.0.v20100503'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.equinox.servletbridge.extensionbundle' version='1.2.0.v20100503'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.osgi' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.equinox.servletbridge.extensionbundle' version='1.2.0.v20100503'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;X-Deploy-Export-Package: javax.servlet;version=&quot;2.5&quot;,javax.servlet.http;version =&quot;2.5&quot;,javax.servlet.resources;version=&quot;2.5&quot;,org.eclipse.equinox.servletbridge;version=&quot;1.1&quot;&#xA;Bundle-Version: 1.2.0.v20100503&#xA;Manifest-Version: 1.0&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/rt:org.eclipse.equinox/server-side/bundles/org.eclipse.equinox.servletbridge.extensionbundle;tag=v20100503&#xA;Bundle-SymbolicName: org.eclipse.equinox.servletbridge.extensionbundle&#xA;Bundle-Name: Servletbridge Extension bundle&#xA;Fragment-Host: system.bundle; extension:=framework
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.core.filesystem' version='1.3.1.R36x_v20100727-0745'>
+      <update id='org.eclipse.core.filesystem' range='[0.0.0,1.3.1.R36x_v20100727-0745)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Core File Systems'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.filesystem' version='1.3.1.R36x_v20100727-0745'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.core.filesystem' version='1.3.1.R36x_v20100727-0745'/>
+        <provided namespace='java.package' name='org.eclipse.core.filesystem' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.filesystem.provider' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.filesystem' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.filesystem.local' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.2.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.registry' range='[3.2.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.osgi' range='[3.2.0,4.0.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem' version='1.3.1.R36x_v20100727-0745'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: org.eclipse.core.internal.filesystem.Activator&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.core.filesystem;tag=R36x_v20100727-0745&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: org.eclipse.core.filesystem; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 1.3.1.R36x_v20100727-0745&#xA;Bundle-Localization: plugin&#xA;Export-Package: org.eclipse.core.filesystem,org.eclipse.core.filesystem.provider,org.eclipse.core.internal.filesystem;x-internal:=true,org.eclipse.core.internal.filesystem.local;x-internal:=true&#xA;Require-Bundle: org.eclipse.equinox.common;bundle-version=&quot;[3.2.0,4.0.0)&quot;,org.eclipse.equinox.registry;bundle-version=&quot;[3.2.0,4.0.0)&quot;,org.eclipse.osgi;bundle-version=&quot;[3.2.0,4.0.0)&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.equinox.registry' version='3.5.0.v20100503'>
+      <update id='org.eclipse.equinox.registry' range='[0.0.0,3.5.0.v20100503)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
+        <property name='df_LT.pluginName' value='Extension Registry Support'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='11'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.registry' version='3.5.0.v20100503'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.equinox.registry' version='3.5.0.v20100503'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.adapter' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.registry' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.registry.osgi' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.registry.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime' version='3.4.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime.dynamichelpers' version='3.4.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime.spi' version='3.4.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='16'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.2.0,4.0.0)'/>
+        <required namespace='java.package' name='javax.xml.parsers' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.core.runtime.jobs' range='0.0.0' optional='true'/>
+        <required namespace='java.package' name='org.eclipse.osgi.framework.console' range='0.0.0' optional='true'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.datalocation' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.debug' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.environment' range='0.0.0' optional='true'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.localization' range='1.1.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.resolver' range='0.0.0' optional='true'/>
+        <required namespace='java.package' name='org.eclipse.osgi.storagemanager' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.util' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.framework' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.service.packageadmin' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.util.tracker' range='0.0.0'/>
+        <required namespace='java.package' name='org.xml.sax' range='0.0.0'/>
+        <required namespace='java.package' name='org.xml.sax.helpers' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.equinox.registry' version='3.5.0.v20100503'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Comment-Header: Both Eclipse-LazyStart and Bundle-ActivationPolicy are specified for compatibility with 3.2&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-ExtensibleAPI: true&#xA;Require-Bundle: org.eclipse.equinox.common;bundle-version=&quot;[3.2.0,4.0.0)&quot;&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/rt:org.eclipse.equinox/components/bundles/org.eclipse.equinox.registry;tag=v20100503&#xA;Manifest-Version: 1.0&#xA;Bundle-ClassPath: runtime_registry_compatibility.jar, .&#xA;Bundle-Vendor: %providerName&#xA;Import-Package: javax.xml.parsers,org.eclipse.core.runtime.jobs;resolution:=optional,org.eclipse.osgi.framework.console;resolution:=optional,org.eclipse.osgi.service.datalocation,org.eclipse.osgi.service.debug,org.eclipse.osgi.service.environment;resolution:=optional,org.eclipse.osgi.service.localization;version=&quot;1.1.0&quot;,org.eclipse.osgi.service.resolver;resolution:=optional,org.eclipse.osgi.storagemanager,org.eclipse.osgi.util,org.osgi.framework,org.osgi.service.packageadmin,org.osgi.util.tracker,org.xml.sax,org.xml.sax.helpers&#xA;Bundle-Activator: org.eclipse.core.internal.registry.osgi.Activator&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 3.5.0.v20100503&#xA;Eclipse-LazyStart: true&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4,CDC-1.0/Foundation-1.0,J2SE-1.3&#xA;Export-Package: org.eclipse.core.internal.adapter;x-internal:=true,org.eclipse.core.internal.registry;x-friends:=&quot;org.eclipse.core.runtime&quot;,org.eclipse.core.internal.registry.osgi;x-friends:=&quot;org.eclipse.core.runtime&quot;,org.eclipse.core.internal.registry.spi;x-internal:=true,org.eclipse.core.runtime;registry=split;version=&quot;3.4.0&quot;;mandatory:=registry,org.eclipse.core.runtime.dynamichelpers;version=&quot;3.4.0&quot;,org.eclipse.core.runtime.spi;version=&quot;3.4.0&quot;&#xA;Bundle-SymbolicName: org.eclipse.equinox.registry;singleton:=true&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.equinox.preferences' version='3.3.0.v20100503'>
+      <update id='org.eclipse.equinox.preferences' range='[0.0.0,3.3.0.v20100503)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
+        <property name='df_LT.pluginName' value='Eclipse Preferences Mechanism'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.preferences' version='3.3.0.v20100503'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.equinox.preferences' version='3.3.0.v20100503'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.preferences' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.preferences.exchange' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime.preferences' version='3.3.0'/>
+        <provided namespace='java.package' name='org.osgi.service.prefs' version='1.1.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.2.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.registry' range='[3.2.0,4.0.0)' optional='true'/>
+        <required namespace='java.package' name='org.eclipse.osgi.framework.log' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.datalocation' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.debug' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.environment' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.util' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.framework' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.service.packageadmin' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.util.tracker' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.equinox.preferences' version='3.3.0.v20100503'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Import-Package: org.eclipse.osgi.framework.log,org.eclipse.osgi.service.datalocation,org.eclipse.osgi.service.debug,org.eclipse.osgi.service.environment,org.eclipse.osgi.util,org.osgi.framework,org.osgi.service.packageadmin,org.osgi.util.tracker&#xA;Bundle-ManifestVersion: 2&#xA;Comment-Header: Both Eclipse-LazyStart and Bundle-ActivationPolicy are specified for compatibility with 3.2&#xA;Manifest-Version: 1.0&#xA;Bundle-Name: %pluginName&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ActivationPolicy: lazy; exclude:=&quot;org.eclipse.core.internal.preferences.exchange&quot;&#xA;Bundle-Version: 3.3.0.v20100503&#xA;Export-Package: org.eclipse.core.internal.preferences;x-friends:=&quot;org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.equinox.p2.engine&quot;,org.eclipse.core.internal.preferences.exchange;x-friends:=&quot;org.eclipse.core.runtime&quot;,org.eclipse.core.runtime.preferences;version=&quot;3.3.0&quot;,org.osgi.service.prefs;version=&quot;1.1.1&quot;&#xA;Require-Bundle: org.eclipse.equinox.common;bundle-version=&quot;[3.2.0,4.0.0)&quot;,org.eclipse.equinox.registry;bundle-version=&quot;[3.2.0,4.0.0)&quot;;resolution:=optional&#xA;Bundle-Activator: org.eclipse.core.internal.preferences.Activator&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/rt:org.eclipse.equinox/compendium/bundles/org.eclipse.equinox.preferences;tag=v20100503&#xA;Bundle-SymbolicName: org.eclipse.equinox.preferences; singleton:=true&#xA;Eclipse-LazyStart: true; exceptions=&quot;org.eclipse.core.internal.preferences.exchange&quot;&#xA;Bundle-RequiredExecutionEnvironment: CDC-1.1/Foundation-1.1,J2SE-1.4&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.m2m.atl.common' version='3.1.2.v20110119-0755'>
+      <update id='org.eclipse.m2m.atl.common' range='[0.0.0,3.1.2.v20110119-0755)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='df_LT.pluginName' value='ATL Common'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.m2m.atl.common' version='3.1.2.v20110119-0755'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.m2m.atl.common' version='3.1.2.v20110119-0755'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.common' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.m2m.atl.common' version='3.1.2.v20110119-0755'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Bundle-Name: %pluginName&#xA;Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: org.eclipse.m2m.atl.common;singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 3.1.2.v20110119-0755&#xA;Bundle-Localization: plugin&#xA;Export-Package: org.eclipse.m2m.atl.common
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.osgi.services' version='3.2.100.v20100503' singleton='false'>
+      <update id='org.eclipse.osgi.services' range='[0.0.0,3.2.100.v20100503)' severity='0'/>
+      <properties size='8'>
+        <property name='df_LT.osgiServicesDes' value='OSGi Service Platform Release 4.2.0 Service Interfaces and Classes'/>
+        <property name='df_LT.osgiServices' value='OSGi Release 4.2.0 Services'/>
+        <property name='df_LT.eclipse.org' value='Eclipse.org - Equinox'/>
+        <property name='org.eclipse.equinox.p2.name' value='%osgiServices'/>
+        <property name='org.eclipse.equinox.p2.description' value='%osgiServicesDes'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%eclipse.org'/>
+        <property name='org.eclipse.equinox.p2.contact' value='www.eclipse.org'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='16'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.osgi.services' version='3.2.100.v20100503'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.osgi.services' version='3.2.100.v20100503'/>
+        <provided namespace='java.package' name='org.osgi.service.cm' version='1.2.1'/>
+        <provided namespace='java.package' name='org.osgi.service.component' version='1.1.0'/>
+        <provided namespace='java.package' name='org.osgi.service.device' version='1.1.0'/>
+        <provided namespace='java.package' name='org.osgi.service.event' version='1.2.0'/>
+        <provided namespace='java.package' name='org.osgi.service.http' version='1.2.1'/>
+        <provided namespace='java.package' name='org.osgi.service.io' version='1.0.0'/>
+        <provided namespace='java.package' name='org.osgi.service.log' version='1.3.0'/>
+        <provided namespace='java.package' name='org.osgi.service.metatype' version='1.1.0'/>
+        <provided namespace='java.package' name='org.osgi.service.provisioning' version='1.2.0'/>
+        <provided namespace='java.package' name='org.osgi.service.upnp' version='1.1.0'/>
+        <provided namespace='java.package' name='org.osgi.service.useradmin' version='1.1.0'/>
+        <provided namespace='java.package' name='org.osgi.service.wireadmin' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='17'>
+        <required namespace='java.package' name='javax.servlet' range='0.0.0' optional='true'/>
+        <required namespace='java.package' name='javax.servlet.http' range='0.0.0' optional='true'/>
+        <required namespace='java.package' name='org.osgi.framework' range='1.2.0'/>
+        <required namespace='java.package' name='org.osgi.service.cm' range='[1.2.1,1.3.0)'/>
+        <required namespace='java.package' name='org.osgi.service.component' range='[1.1.0,1.2.0)'/>
+        <required namespace='java.package' name='org.osgi.service.device' range='[1.1.0,1.2.0)'/>
+        <required namespace='java.package' name='org.osgi.service.event' range='[1.2.0,1.3.0)'/>
+        <required namespace='java.package' name='org.osgi.service.http' range='[1.2.1,1.3.0)'/>
+        <required namespace='java.package' name='org.osgi.service.io' range='[1.0.0,1.1.0)'/>
+        <required namespace='java.package' name='org.osgi.service.log' range='[1.3.0,1.4.0)'/>
+        <required namespace='java.package' name='org.osgi.service.metatype' range='[1.1.0,1.2.0)'/>
+        <required namespace='java.package' name='org.osgi.service.provisioning' range='[1.2.0,1.3.0)'/>
+        <required namespace='java.package' name='org.osgi.service.upnp' range='[1.1.0,1.2.0)'/>
+        <required namespace='java.package' name='org.osgi.service.useradmin' range='[1.1.0,1.2.0)'/>
+        <required namespace='java.package' name='org.osgi.service.wireadmin' range='[1.0.0,1.1.0)'/>
+        <required namespace='java.package' name='javax.servlet' range='0.0.0' optional='true'/>
+        <required namespace='java.package' name='javax.servlet.http' range='0.0.0' optional='true'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.osgi.services' version='3.2.100.v20100503'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ContactAddress: www.eclipse.org&#xA;Import-Package: org.osgi.framework; version=1.2,org.osgi.service.cm; version=&quot;[1.2.1, 1.3)&quot;,org.osgi.service.component; version=&quot;[1.1, 1.2)&quot;,org.osgi.service.device; version=&quot;[1.1, 1.2)&quot;,org.osgi.service.event; version=&quot;[1.2, 1.3)&quot;,org.osgi.service.http; version=&quot;[1.2.1, 1.3)&quot;,org.osgi.service.io; version=&quot;[1.0, 1.1)&quot;,org.osgi.service.log; version=&quot;[1.3, 1.4)&quot;,org.osgi.service.metatype; version=&quot;[1.1, 1.2)&quot;,org.osgi.service.provisioning; version=&quot;[1.2, 1.3)&quot;,org.osgi.service.upnp; version=&quot;[1.1, 1.2)&quot;,org.osgi.service.useradmin; version=&quot;[1.1, 1.2)&quot;,org.osgi.service.wireadmin; version=&quot;[1.0, 1.1)&quot;,javax.servlet; resolution:=&quot;optional&quot;,javax.servlet.http; resolution:=&quot;optional&quot;&#xA;Bundle-ManifestVersion: 2&#xA;DynamicImport-Package: javax.servlet,javax.servlet.http&#xA;Bundle-Copyright: %copyright&#xA;Manifest-Version: 1.0&#xA;Bundle-Name: %osgiServices&#xA;Bundle-Vendor: %eclipse.org&#xA;Bundle-Description: %osgiServicesDes&#xA;Bundle-Version: 3.2.100.v20100503&#xA;Export-Package: org.osgi.service.cm; version=&quot;1.2.1&quot;,org.osgi.service.component; version=&quot;1.1&quot;,org.osgi.service.device; version=&quot;1.1&quot;,org.osgi.service.event; version=&quot;1.2&quot;,org.osgi.service.http; version=&quot;1.2.1&quot;,org.osgi.service.io; version=&quot;1.0&quot;,org.osgi.service.log; version=&quot;1.3&quot;,org.osgi.service.metatype; version=&quot;1.1&quot;,org.osgi.service.provisioning; version=&quot;1.2&quot;,org.osgi.service.upnp; version=&quot;1.1&quot;,org.osgi.service.useradmin; version=&quot;1.1&quot;,org.osgi.service.wireadmin; version=&quot;1.0&quot;&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/rt:org.eclipse.equinox/compendium/bundles/org.eclipse.osgi.services;tag=v20100503&#xA;Bundle-SymbolicName: org.eclipse.osgi.services&#xA;Bundle-RequiredExecutionEnvironment: OSGi/Minimum-1.2,CDC-1.1/Foundation-1.1,J2SE-1.4&#xA;Bundle-Localization: plugin&#xA;Bundle-DocUrl: http://www.eclipse.org
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.equinox.app' version='1.3.1.R36x_v20100803'>
+      <update id='org.eclipse.equinox.app' range='[0.0.0,1.3.1.R36x_v20100803)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
+        <property name='df_LT.pluginName' value='Equinox Application Container'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.app' version='1.3.1.R36x_v20100803'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.equinox.app' version='1.3.1.R36x_v20100803'/>
+        <provided namespace='java.package' name='org.eclipse.equinox.app' version='1.1.0'/>
+        <provided namespace='java.package' name='org.eclipse.equinox.internal.app' version='0.0.0'/>
+        <provided namespace='java.package' name='org.osgi.service.application' version='1.1.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='16'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.registry' range='[3.4.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.2.0,4.0.0)'/>
+        <required namespace='java.package' name='org.osgi.service.event' range='1.0.0' optional='true'/>
+        <required namespace='java.package' name='org.eclipse.osgi.framework.console' range='0.0.0' optional='true'/>
+        <required namespace='java.package' name='org.eclipse.osgi.framework.log' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.datalocation' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.debug' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.environment' range='1.1.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.runnable' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.storagemanager' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.util' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.framework' range='1.3.0'/>
+        <required namespace='java.package' name='org.osgi.service.condpermadmin' range='0.0.0' optional='true'/>
+        <required namespace='java.package' name='org.osgi.service.event' range='1.0.0' optional='true'/>
+        <required namespace='java.package' name='org.osgi.service.packageadmin' range='1.2.0'/>
+        <required namespace='java.package' name='org.osgi.util.tracker' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.equinox.app' version='1.3.1.R36x_v20100803'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Comment-Header: Both Eclipse-LazyStart and Bundle-ActivationPolicy are specified for compatibility with 3.2&#xA;Bundle-ManifestVersion: 2&#xA;DynamicImport-Package: org.osgi.service.event;version=&quot;1.0.0&quot;&#xA;Require-Bundle: org.eclipse.equinox.registry;bundle-version=&quot;[3.4.0,4.0.0)&quot;,org.eclipse.equinox.common;bundle-version=&quot;[3.2.0,4.0.0)&quot;&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/rt:org.eclipse.equinox/compendium/bundles/org.eclipse.equinox.app;tag=R36x_v20100803&#xA;Comment-DynamicImport: this is only used to allow late binding of the package&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Import-Package: org.eclipse.osgi.framework.console;resolution:=optional,org.eclipse.osgi.framework.log,org.eclipse.osgi.service.datalocation,org.eclipse.osgi.service.debug,org.eclipse.osgi.service.environment; version=&quot;1.1&quot;,org.eclipse.osgi.service.runnable,org.eclipse.osgi.storagemanager,org.eclipse.osgi.util,org.osgi.framework;version=&quot;1.3&quot;,org.osgi.service.condpermadmin; resolution:=optional,org.osgi.service.event;version=&quot;1.0.0&quot;;resolution:=optional,org.osgi.service.packageadmin;version=&quot;1.2&quot;,org.osgi.util.tracker&#xA;Bundle-Activator: org.eclipse.equinox.internal.app.Activator&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 1.3.1.R36x_v20100803&#xA;Eclipse-LazyStart: true&#xA;Bundle-RequiredExecutionEnvironment: OSGi/Minimum-1.2,CDC-1.1/Foundation-1.1,J2SE-1.4&#xA;Export-Package: org.eclipse.equinox.app;version=&quot;1.1&quot;,org.eclipse.equinox.internal.app;x-friends:=&quot;org.eclipse.core.runtime&quot;,org.osgi.service.application;version=&quot;1.1&quot;&#xA;Bundle-SymbolicName: org.eclipse.equinox.app; singleton:=true&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.junit' version='4.8.1.v4_8_1_v20100427-1100' singleton='false'>
+      <update id='org.junit' range='[0.0.0,4.8.1.v4_8_1_v20100427-1100)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='JUnit Testing Framework'/>
+        <property name='df_LT.providerName' value='Eclipse Orbit'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='31'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.junit' version='4.8.1.v4_8_1_v20100427-1100'/>
+        <provided namespace='osgi.bundle' name='org.junit' version='4.8.1.v4_8_1_v20100427-1100'/>
+        <provided namespace='java.package' name='junit.extensions' version='4.8.1'/>
+        <provided namespace='java.package' name='junit.framework' version='4.8.1'/>
+        <provided namespace='java.package' name='junit.runner' version='4.8.1'/>
+        <provided namespace='java.package' name='junit.textui' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.experimental' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.experimental.categories' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.experimental.max' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.experimental.results' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.experimental.runners' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.experimental.theories' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.experimental.theories.internal' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.experimental.theories.suppliers' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.internal' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.internal.builders' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.internal.matchers' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.internal.requests' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.internal.runners' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.internal.runners.model' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.internal.runners.statements' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.matchers' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.rules' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.runner' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.runner.manipulation' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.runner.notification' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.runners' version='4.8.1'/>
+        <provided namespace='java.package' name='org.junit.runners.model' version='4.8.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.hamcrest.core' range='1.1.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.junit' version='4.8.1.v4_8_1_v20100427-1100'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-Name: %pluginName&#xA;Bundle-ClassPath: junit.jar&#xA;Bundle-Localization: plugin&#xA;Bundle-Version: 4.8.1.v4_8_1_v20100427-1100&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-SymbolicName: org.junit&#xA;Require-Bundle: org.hamcrest.core;bundle-version=&quot;1.1.0&quot;;visibility:=reexport&#xA;Bundle-Vendor: %providerName&#xA;Manifest-Version: 1.0&#xA;Export-Package: junit.extensions;version=&quot;4.8.1&quot;,junit.framework;version=&quot;4.8.1&quot;,junit.runner;version=&quot;4.8.1&quot;,junit.textui;version=&quot;4.8.1&quot;,org.junit;version=&quot;4.8.1&quot;,org.junit.experimental;version=&quot;4.8.1&quot;,org.junit.experimental.categories;version=&quot;4.8.1&quot;,org.junit.experimental.max;version=&quot;4.8.1&quot;,org.junit.experimental.results;version=&quot;4.8.1&quot;,org.junit.experimental.runners;version=&quot;4.8.1&quot;,org.junit.experimental.theories;version=&quot;4.8.1&quot;,org.junit.experimental.theories.internal;version=&quot;4.8.1&quot;;x-internal:=true,org.junit.experimental.theories.suppliers;version=&quot;4.8.1&quot;,org.junit.internal;version=&quot;4.8.1&quot;;x-internal:=true,org.junit.internal.builders;version=&quot;4.8.1&quot;;x-internal:=true,org.junit.internal.matchers;version=&quot;4.8.1&quot;;x-internal:=true,org.junit.internal.requests;version=&quot;4.8.1&quot;;x-internal:=true,org.junit.internal.runners;version=&quot;4.8.1&quot;;x-internal:=true,org.junit.internal.runners.model;version=&quot;4.8.1&quot;;x-internal:=true,org.junit.internal.runners.statements;version=&quot;4.8.1&quot;;x-internal:=true,org.junit.matchers;version=&quot;4.8.1&quot;,org.junit.rules;version=&quot;4.8.1&quot;,org.junit.runner;version=&quot;4.8.1&quot;,org.junit.runner.manipulation;version=&quot;4.8.1&quot;,org.junit.runner.notification;version=&quot;4.8.1&quot;,org.junit.runners;version=&quot;4.8.1&quot;,org.junit.runners.model;version=&quot;4.8.1&quot;&#xA;Bundle-ManifestVersion: 2
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.m2m.atl.engine' version='3.1.2.v20110119-0755'>
+      <update id='org.eclipse.m2m.atl.engine' range='[0.0.0,3.1.2.v20110119-0755)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='df_LT.pluginName' value='ATL Parser and Compiler'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='9'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.m2m.atl.engine' version='3.1.2.v20110119-0755'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.m2m.atl.engine' version='3.1.2.v20110119-0755'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine.asm' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine.compiler' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine.compiler.atl2006' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine.parser' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='7'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.common' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.dsls' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.core.emf' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.engine.emfvm' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.engine.emfvm.launch' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.m2m.atl.engine' version='3.1.2.v20110119-0755'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: %pluginName&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 3.1.2.v20110119-0755&#xA;Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)&#xA;Bundle-Vendor: %providerName&#xA;Require-Bundle: org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.m2m.atl.common,org.eclipse.m2m.atl.dsls,org.eclipse.m2m.atl.core.emf;visibility:=reexport,org.eclipse.m2m.atl.engine.emfvm,org.eclipse.m2m.atl.engine.emfvm.launch&#xA;Export-Package: org.eclipse.m2m.atl.engine,org.eclipse.m2m.atl.engine.asm,org.eclipse.m2m.atl.engine.compiler,org.eclipse.m2m.atl.engine.compiler.atl2006,org.eclipse.m2m.atl.engine.parser&#xA;Bundle-SymbolicName: org.eclipse.m2m.atl.engine; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.junit4' version='4.8.1.v20100525' singleton='false'>
+      <update id='org.junit4' range='[0.0.0,4.8.1.v20100525)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='JUnit Testing Framework Version 4'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.junit4' version='4.8.1.v20100525'/>
+        <provided namespace='osgi.bundle' name='org.junit4' version='4.8.1.v20100525'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.hamcrest.core' range='1.1.0'/>
+        <required namespace='osgi.bundle' name='org.junit' range='4.8.1'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.junit4' version='4.8.1.v20100525'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.hamcrest.core;bundle-version=&quot;1.1.0&quot;;visibility:=reexport,org.junit;bundle-version=&quot;4.8.1&quot;;visibility:=reexport&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 4.8.1.v20100525&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.junit4;tag=v20100525&#xA;Bundle-SymbolicName: org.junit4&#xA;Bundle-Localization: plugin&#xA;Bundle-Name: %pluginName&#xA;Bundle-Vendor: %providerName
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='javax.xml' version='1.3.4.v201005080400' singleton='false'>
+      <update id='javax.xml' range='[0.0.0,1.3.4.v201005080400)' severity='0'/>
+      <properties size='4'>
+        <property name='df_LT.Bundle-Vendor.0' value='Eclipse Orbit'/>
+        <property name='df_LT.Bundle-Name.0' value='JAXP XML'/>
+        <property name='org.eclipse.equinox.p2.name' value='%Bundle-Name.0'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%Bundle-Vendor.0'/>
+      </properties>
+      <provides size='29'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='javax.xml' version='1.3.4.v201005080400'/>
+        <provided namespace='osgi.bundle' name='javax.xml' version='1.3.4.v201005080400'/>
+        <provided namespace='java.package' name='javax.xml' version='1.3.0'/>
+        <provided namespace='java.package' name='javax.xml.datatype' version='1.3.0'/>
+        <provided namespace='java.package' name='javax.xml.namespace' version='1.3.0'/>
+        <provided namespace='java.package' name='javax.xml.parsers' version='1.3.0'/>
+        <provided namespace='java.package' name='javax.xml.transform' version='1.3.0'/>
+        <provided namespace='java.package' name='javax.xml.transform.dom' version='1.3.0'/>
+        <provided namespace='java.package' name='javax.xml.transform.sax' version='1.3.0'/>
+        <provided namespace='java.package' name='javax.xml.transform.stream' version='1.3.0'/>
+        <provided namespace='java.package' name='javax.xml.validation' version='1.3.0'/>
+        <provided namespace='java.package' name='javax.xml.xpath' version='1.3.0'/>
+        <provided namespace='java.package' name='org.apache.xmlcommons' version='1.3.4'/>
+        <provided namespace='java.package' name='org.w3c.dom' version='3.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.bootstrap' version='3.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.css' version='2.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.events' version='2.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.html' version='2.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.ls' version='2.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.ranges' version='2.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.stylesheets' version='2.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.traversal' version='2.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.views' version='2.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.xpath' version='3.0.0'/>
+        <provided namespace='java.package' name='org.xml.sax' version='2.0.2'/>
+        <provided namespace='java.package' name='org.xml.sax.ext' version='2.0.2'/>
+        <provided namespace='java.package' name='org.xml.sax.helpers' version='2.0.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.osgi' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='javax.xml' version='1.3.4.v201005080400'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.2&#xA;Require-Bundle: system.bundle&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.3.4.v201005080400&#xA;Export-Package: javax.xml;version=&quot;1.3&quot;,javax.xml.datatype;version=&quot;1.3&quot;,javax.xml.namespace;version=&quot;1.3&quot;,javax.xml.parsers;version=&quot;1.3&quot;,javax.xml.transform;version=&quot;1.3&quot;,javax.xml.transform.dom;version=&quot;1.3&quot;,javax.xml.transform.sax;version=&quot;1.3&quot;,javax.xml.transform.stream;version=&quot;1.3&quot;,javax.xml.validation;version=&quot;1.3&quot;,javax.xml.xpath;version=&quot;1.3&quot;,org.apache.xmlcommons;version=&quot;1.3.4&quot;,org.w3c.dom;version=&quot;3.0&quot;,org.w3c.dom.bootstrap;version=&quot;3.0&quot;,org.w3c.dom.css;version=&quot;2.0&quot;,org.w3c.dom.events;version=&quot;2.0&quot;,org.w3c.dom.html;version=&quot;2.0&quot;,org.w3c.dom.ls;version=&quot;2.0&quot;,org.w3c.dom.ranges;version=&quot;2.0&quot;,org.w3c.dom.stylesheets;version=&quot;2.0&quot;,org.w3c.dom.traversal;version=&quot;2.0&quot;,org.w3c.dom.views;version=&quot;2.0&quot;,org.w3c.dom.xpath;version=&quot;3.0&quot;,org.xml.sax;version=&quot;2.0.2&quot;,org.xml.sax.ext;version=&quot;2.0.2&quot;,org.xml.sax.helpers;version=&quot;2.0.2&quot;&#xA;Bundle-SymbolicName: javax.xml&#xA;Bundle-Localization: plugin&#xA;Bundle-Name: %Bundle-Name.0&#xA;Bundle-Vendor: %Bundle-Vendor.0
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.m2m.atl.core.emf' version='3.1.2.v20110119-0755'>
+      <update id='org.eclipse.m2m.atl.core.emf' range='[0.0.0,3.1.2.v20110119-0755)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='df_LT.pluginName' value='ATL Core EMF extension'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.m2m.atl.core.emf' version='3.1.2.v20110119-0755'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.m2m.atl.core.emf' version='3.1.2.v20110119-0755'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.core.emf' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.common' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.m2m.atl.core.emf' version='3.1.2.v20110119-0755'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Export-Package: org.eclipse.m2m.atl.core.emf&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin&#xA;Require-Bundle: org.eclipse.m2m.atl.common,org.eclipse.m2m.atl.core;visibility:=reexport,org.eclipse.emf.ecore.xmi;visibility:=reexport&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 3.1.2.v20110119-0755&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: org.eclipse.m2m.atl.core.emf;singleton:=true&#xA;Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Manifest-Version: 1.0
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.hamcrest.core' version='1.1.0.v20090501071000' singleton='false'>
+      <update id='org.hamcrest.core' range='[0.0.0,1.1.0.v20090501071000)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='Hamcrest Core Library of Matchers'/>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.hamcrest.core' version='1.1.0.v20090501071000'/>
+        <provided namespace='osgi.bundle' name='org.hamcrest.core' version='1.1.0.v20090501071000'/>
+        <provided namespace='java.package' name='org.hamcrest' version='1.1.0'/>
+        <provided namespace='java.package' name='org.hamcrest.core' version='1.1.0'/>
+        <provided namespace='java.package' name='org.hamcrest.internal' version='1.1.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.hamcrest.core' version='1.1.0.v20090501071000'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Export-Package: org.hamcrest;version=&quot;1.1.0&quot;;core=split;mandatory:=core,org.hamcrest.core;version=&quot;1.1.0&quot;,org.hamcrest.internal;version=&quot;1.1.0&quot;;x-internal:=true&#xA;Bundle-Localization: plugin&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 1.1.0.v20090501071000&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: org.hamcrest.core&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.core.contenttype' version='3.4.100.v20100505-1235'>
+      <update id='org.eclipse.core.contenttype' range='[0.0.0,3.4.100.v20100505-1235)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Eclipse Content Mechanism'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.contenttype' version='3.4.100.v20100505-1235'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.core.contenttype' version='3.4.100.v20100505-1235'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.content' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime.content' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.preferences' range='[3.2.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.registry' range='[3.2.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.2.0,4.0.0)'/>
+        <required namespace='java.package' name='javax.xml.parsers' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.debug' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.util' range='1.0.0'/>
+        <required namespace='java.package' name='org.osgi.framework' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.util.tracker' range='0.0.0'/>
+        <required namespace='java.package' name='org.xml.sax' range='0.0.0'/>
+        <required namespace='java.package' name='org.xml.sax.ext' range='0.0.0'/>
+        <required namespace='java.package' name='org.xml.sax.helpers' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.core.contenttype' version='3.4.100.v20100505-1235'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: %pluginName&#xA;Bundle-Version: 3.4.100.v20100505-1235&#xA;Import-Package: javax.xml.parsers,org.eclipse.osgi.service.debug,org.eclipse.osgi.util;version=&quot;1.0.0&quot;,org.osgi.framework,org.osgi.util.tracker,org.xml.sax,org.xml.sax.ext,org.xml.sax.helpers&#xA;Bundle-Activator: org.eclipse.core.internal.content.Activator&#xA;Bundle-Vendor: %providerName&#xA;Require-Bundle: org.eclipse.equinox.preferences;bundle-version=&quot;[3.2.0,4.0.0)&quot;,org.eclipse.equinox.registry;bundle-version=&quot;[3.2.0,4.0.0)&quot;,org.eclipse.equinox.common;bundle-version=&quot;[3.2.0,4.0.0)&quot;&#xA;Export-Package: org.eclipse.core.internal.content;x-internal:=true,org.eclipse.core.runtime.content&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.core.contenttype;tag=v20100505-1235&#xA;Bundle-SymbolicName: org.eclipse.core.contenttype; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4,CDC-1.0/Foundation-1.0,J2SE-1.3&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.core.runtime' version='3.6.0.v20100505'>
+      <update id='org.eclipse.core.runtime' range='[0.0.0,3.6.0.v20100505)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Core Runtime'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' version='3.6.0.v20100505'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.core.runtime' version='3.6.0.v20100505'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.preferences.legacy' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.runtime' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime' version='3.4.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='osgi.bundle' name='org.eclipse.osgi' range='[3.5.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.5.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.jobs' range='[3.2.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.registry' range='[3.4.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.preferences' range='[3.3.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.contenttype' range='[3.3.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime.compatibility.auth' range='[3.2.0,4.0.0)' optional='true'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.app' range='[1.0.0,2.0.0)'/>
+        <required namespace='java.package' name='org.eclipse.core.internal.runtime.auth' range='0.0.0' optional='true'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.core.runtime' version='3.6.0.v20100505'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: %pluginName&#xA;Bundle-Version: 3.6.0.v20100505&#xA;DynamicImport-Package: org.eclipse.core.internal.runtime.auth&#xA;Bundle-Activator: org.eclipse.core.internal.runtime.PlatformActivator&#xA;Bundle-Vendor: %providerName&#xA;Require-Bundle: org.eclipse.osgi;bundle-version=&quot;[3.5.0,4.0.0)&quot;;visibility:=reexport,org.eclipse.equinox.common;bundle-version=&quot;[3.5.0,4.0.0)&quot;;visibility:=reexport,org.eclipse.core.jobs;bundle-version=&quot;[3.2.0,4.0.0)&quot;;visibility:=reexport,org.eclipse.equinox.registry;bundle-version=&quot;[3.4.0,4.0.0)&quot;;visibility:=reexport,org.eclipse.equinox.preferences;bundle-version=&quot;[3.3.0,4.0.0)&quot;;visibility:=reexport,org.eclipse.core.contenttype;bundle-version=&quot;[3.3.0,4.0.0)&quot;;visibility:=reexport,org.eclipse.core.runtime.compatibility.auth;bundle-version=&quot;[3.2.0,4.0.0)&quot;;resolution:=optional,org.eclipse.equinox.app;bundle-version=&quot;[1.0.0,2.0.0)&quot;;visibility:=reexport&#xA;Export-Package: org.eclipse.core.internal.preferences.legacy;x-internal:=true,org.eclipse.core.internal.runtime;x-friends:=&quot;org.eclipse.core.runtime.compatibility&quot;,org.eclipse.core.runtime;version=&quot;3.4.0&quot;&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.core.runtime;tag=v20100505&#xA;Bundle-SymbolicName: org.eclipse.core.runtime; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: CDC-1.0/Foundation-1.0,J2SE-1.3&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='com.ibm.icu' version='4.2.1.v20100412'>
+      <update id='com.ibm.icu' range='[0.0.0,4.2.1.v20100412)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='International Components for Unicode for Java (ICU4J)'/>
+        <property name='df_LT.providerName' value='IBM Corporation'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='15'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.ibm.icu' version='4.2.1.v20100412'/>
+        <provided namespace='osgi.bundle' name='com.ibm.icu' version='4.2.1.v20100412'/>
+        <provided namespace='java.package' name='com.ibm.icu.lang' version='4.2.1.1'/>
+        <provided namespace='java.package' name='com.ibm.icu.math' version='4.2.1.1'/>
+        <provided namespace='java.package' name='com.ibm.icu.text' version='4.2.1.1'/>
+        <provided namespace='java.package' name='com.ibm.icu.util' version='4.2.1.1'/>
+        <provided namespace='java.package' name='com.ibm.icu.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='com.ibm.icu.impl.data' version='0.0.0'/>
+        <provided namespace='java.package' name='com.ibm.icu.impl.data.icudt42b' version='0.0.0'/>
+        <provided namespace='java.package' name='com.ibm.icu.impl.data.icudt42b.brkitr' version='0.0.0'/>
+        <provided namespace='java.package' name='com.ibm.icu.impl.data.icudt42b.coll' version='0.0.0'/>
+        <provided namespace='java.package' name='com.ibm.icu.impl.data.icudt42b.rbnf' version='0.0.0'/>
+        <provided namespace='java.package' name='com.ibm.icu.impl.data.icudt42b.translit' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.ibm.icu' version='4.2.1.v20100412'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ClassPath: icu-jse4.jar,icu-data.jar,.&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 4.2.1.v20100412&#xA;Eclipse-LazyStart: true&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-ExtensibleAPI: true&#xA;Export-Package: com.ibm.icu.lang;base=true;full=true;version=&quot;4.2.1.1&quot;,com.ibm.icu.math;base=true;full=true;version=&quot;4.2.1.1&quot;,com.ibm.icu.text;base=true;full=true;version=&quot;4.2.1.1&quot;,com.ibm.icu.util;base=true;full=true;version=&quot;4.2.1.1&quot;,com.ibm.icu.impl;x-internal:=true,com.ibm.icu.impl.data;x-internal:=true,com.ibm.icu.impl.data.icudt42b;x-internal:=true,com.ibm.icu.impl.data.icudt42b.brkitr;x-internal:=true,com.ibm.icu.impl.data.icudt42b.coll;x-internal:=true,com.ibm.icu.impl.data.icudt42b.rbnf;x-internal:=true,com.ibm.icu.impl.data.icudt42b.translit;x-internal:=true&#xA;Bundle-Copyright: Licensed Materials - Property of IBM (C) Copyright IBM Corp. 2000, 2010. All Rights Reserved. IBM is a registered trademark of IBM Corp.&#xA;Bundle-SymbolicName: com.ibm.icu; singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: CDC-1.0/Foundation-1.0,J2SE-1.3&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.core.resources' version='3.6.1.R36x_v20110131-1630'>
+      <update id='org.eclipse.core.resources' range='[0.0.0,3.6.1.R36x_v20110131-1630)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Core Resource Management'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='22'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' version='3.6.1.R36x_v20110131-1630'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.core.resources' version='3.6.1.R36x_v20110131-1630'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.dtree' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.events' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.localstore' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.properties' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.propertytester' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.refresh' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.resources' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.resources.mapping' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.resources.projectvariables' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.resources.refresh.win32' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.utils' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.watson' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.resources' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.resources.filtermatchers' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.resources.mapping' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.resources.refresh' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.resources.team' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.resources.variableresolvers' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='4'>
+        <required namespace='osgi.bundle' name='org.eclipse.ant.core' range='[3.1.0,4.0.0)' optional='true'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='[3.2.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.filesystem' range='[1.1.0,2.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.2.0,4.0.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.core.resources' version='3.6.1.R36x_v20110131-1630'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: org.eclipse.core.resources.ResourcesPlugin&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.core.resources;tag=R36x_v20110131-1630&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: org.eclipse.core.resources; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 3.6.1.R36x_v20110131-1630&#xA;Bundle-Localization: plugin&#xA;Export-Package: org.eclipse.core.internal.dtree;x-internal:=true,org.eclipse.core.internal.events;x-internal:=true,org.eclipse.core.internal.localstore;x-internal:=true,org.eclipse.core.internal.properties;x-internal:=true,org.eclipse.core.internal.propertytester;x-internal:=true,org.eclipse.core.internal.refresh;x-internal:=true,org.eclipse.core.internal.resources;x-internal:=true,org.eclipse.core.internal.resources.mapping;x-internal:=true,org.eclipse.core.internal.resources.projectvariables;x-internal:=true,org.eclipse.core.internal.resources.refresh.win32;x-internal:=true,org.eclipse.core.internal.utils;x-internal:=true,org.eclipse.core.internal.watson;x-internal:=true,org.eclipse.core.resources,org.eclipse.core.resources.filtermatchers,org.eclipse.core.resources.mapping,org.eclipse.core.resources.refresh,org.eclipse.core.resources.team,org.eclipse.core.resources.variableresolvers&#xA;Require-Bundle: org.eclipse.ant.core;bundle-version=&quot;[3.1.0,4.0.0)&quot;;resolution:=optional,org.eclipse.core.expressions;bundle-version=&quot;[3.2.0,4.0.0)&quot;,org.eclipse.core.filesystem;bundle-version=&quot;[1.1.0,2.0.0)&quot;,org.eclipse.core.runtime;bundle-version=&quot;[3.2.0,4.0.0)&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.core.variables' version='3.2.400.v20100505'>
+      <update id='org.eclipse.core.variables' range='[0.0.0,3.2.400.v20100505)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Core Variables'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.variables' version='3.2.400.v20100505'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.core.variables' version='3.2.400.v20100505'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.variables' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.variables' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.3.0,4.0.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.core.variables' version='3.2.400.v20100505'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: org.eclipse.core.variables.VariablesPlugin&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.core.variables;tag=v20100505&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: org.eclipse.core.variables; singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 3.2.400.v20100505&#xA;Bundle-Localization: plugin&#xA;Export-Package: org.eclipse.core.internal.variables;x-internal:=true,org.eclipse.core.variables&#xA;Require-Bundle: org.eclipse.core.runtime;bundle-version=&quot;[3.3.0,4.0.0)&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.antlr.runtime' version='3.0.0.v200803061811' singleton='false'>
+      <update id='org.antlr.runtime' range='[0.0.0,3.0.0.v200803061811)' severity='0'/>
+      <properties size='4'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='ANTLR Runtime'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.antlr.runtime' version='3.0.0.v200803061811'/>
+        <provided namespace='osgi.bundle' name='org.antlr.runtime' version='3.0.0.v200803061811'/>
+        <provided namespace='java.package' name='org.antlr.runtime' version='3.0.0'/>
+        <provided namespace='java.package' name='org.antlr.runtime.debug' version='3.0.0'/>
+        <provided namespace='java.package' name='org.antlr.runtime.misc' version='3.0.0'/>
+        <provided namespace='java.package' name='org.antlr.runtime.tree' version='3.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.antlr.runtime' version='3.0.0.v200803061811'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 3.0.0.v200803061811&#xA;Export-Package: org.antlr.runtime;version=&quot;3.0.0&quot;,org.antlr.runtime.debug;version=&quot;3.0.0&quot;,org.antlr.runtime.misc;version=&quot;3.0.0&quot;,org.antlr.runtime.tree;version=&quot;3.0.0&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.3&#xA;Bundle-SymbolicName: org.antlr.runtime&#xA;Bundle-Localization: plugin&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.m2m.atl.engine.emfvm' version='3.1.2.v20110119-0755'>
+      <update id='org.eclipse.m2m.atl.engine.emfvm' range='[0.0.0,3.1.2.v20110119-0755)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='df_LT.pluginName' value='ATL EMF Virtual Machine (EMFVM)'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.m2m.atl.engine.emfvm' version='3.1.2.v20110119-0755'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.m2m.atl.engine.emfvm' version='3.1.2.v20110119-0755'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine.emfvm' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine.emfvm.adapter' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine.emfvm.launch' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine.emfvm.lib' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.common' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.core.emf' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.m2m.atl.engine.emfvm' version='3.1.2.v20110119-0755'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: %pluginName&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 3.1.2.v20110119-0755&#xA;Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)&#xA;Bundle-Vendor: %providerName&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.m2m.atl.common;visibility:=reexport,org.eclipse.m2m.atl.core.emf;visibility:=reexport&#xA;Export-Package: org.eclipse.m2m.atl.engine.emfvm,org.eclipse.m2m.atl.engine.emfvm.adapter,org.eclipse.m2m.atl.engine.emfvm.launch,org.eclipse.m2m.atl.engine.emfvm.lib&#xA;Bundle-SymbolicName: org.eclipse.m2m.atl.engine.emfvm;singleton:=true&#xA;Manifest-Version: 1.0&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.emf.ecore' version='2.6.1.v20100914-1218'>
+      <update id='org.eclipse.emf.ecore' range='[0.0.0,2.6.1.v20100914-1218)' severity='0'/>
+      <properties size='6'>
+        <property name='df_LT.pluginName' value='EMF Ecore'/>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='buckminster.build.id' value='R201009141218'/>
+      </properties>
+      <provides size='17'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore' version='2.6.1.v20100914-1218'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.emf.ecore' version='2.6.1.v20100914-1218'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.plugin' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.resource' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.resource.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xml.namespace' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xml.namespace.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xml.namespace.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xml.type' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xml.type.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xml.type.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.ecore.xml.type.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.6.0,4.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='[2.6.0,3.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='[3.6.0,4.0.0)' optional='true'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore' version='2.6.1.v20100914-1218'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: org.eclipse.emf.ecore; singleton:=true&#xA;Bundle-Version: 2.6.1.v20100914-1218&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Created-By: 2.3 (IBM Corporation)&#xA;Eclipse-BuddyPolicy: dependent&#xA;Bundle-ActivationPolicy: lazy&#xA;Manifest-Version: 1.0&#xA;Bundle-Localization: plugin&#xA;Bundle-ClassPath: .&#xA;Bundle-Name: %pluginName&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Bundle-Activator: org.eclipse.emf.ecore.plugin.EcorePlugin$Implementation&#xA;Eclipse-LazyStart: true&#xA;Export-Package: org.eclipse.emf.ecore,org.eclipse.emf.ecore.impl,org.eclipse.emf.ecore.plugin,org.eclipse.emf.ecore.resource,org.eclipse.emf.ecore.resource.impl,org.eclipse.emf.ecore.util,org.eclipse.emf.ecore.xml.namespace,org.eclipse.emf.ecore.xml.namespace.impl,org.eclipse.emf.ecore.xml.namespace.util,org.eclipse.emf.ecore.xml.type,org.eclipse.emf.ecore.xml.type.impl,org.eclipse.emf.ecore.xml.type.internal,org.eclipse.emf.ecore.xml.type.util&#xA;Require-Bundle: org.eclipse.core.runtime;bundle-version=&quot;[3.6.0,4.0.0)&quot;,org.eclipse.emf.common;visibility:=&quot;reexport&quot;;bundle-version=&quot;[2.6.0,3.0.0)&quot;,org.eclipse.core.resources;resolution:=&quot;optional&quot;;bundle-version=&quot;[3.6.0,4.0.0)&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.m2m.atl.engine.emfvm.launch' version='3.1.2.v20110119-0755'>
+      <update id='org.eclipse.m2m.atl.engine.emfvm.launch' range='[0.0.0,3.1.2.v20110119-0755)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='df_LT.pluginName' value='ATL EMFVM Core UI extension'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.m2m.atl.engine.emfvm.launch' version='3.1.2.v20110119-0755'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.m2m.atl.engine.emfvm.launch' version='3.1.2.v20110119-0755'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.engine.emfvm.launch' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.engine.emfvm' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.debug.core' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.m2m.atl.engine.emfvm.launch' version='3.1.2.v20110119-0755'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: %pluginName&#xA;Bundle-ClassPath: .&#xA;Bundle-Version: 3.1.2.v20110119-0755&#xA;Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)&#xA;Bundle-Vendor: %providerName&#xA;Require-Bundle: org.eclipse.m2m.atl.engine.emfvm;visibility:=reexport,org.eclipse.m2m.atl.debug.core&#xA;Export-Package: org.eclipse.m2m.atl.engine.emfvm.launch&#xA;Bundle-SymbolicName: org.eclipse.m2m.atl.engine.emfvm.launch;singleton:=true&#xA;Manifest-Version: 1.0&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.core.runtime.compatibility.auth' version='3.2.200.v20100517' singleton='false'>
+      <update id='org.eclipse.core.runtime.compatibility.auth' range='[0.0.0,3.2.200.v20100517)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='df_LT.pluginName' value='Authorization Compatibility Plug-in'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime.compatibility.auth' version='3.2.200.v20100517'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.core.runtime.compatibility.auth' version='3.2.200.v20100517'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.runtime.auth' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.2.0,4.0.0)'/>
+        <required namespace='java.package' name='org.eclipse.osgi.framework.log' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.datalocation' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.util' range='1.0.0'/>
+        <required namespace='java.package' name='org.osgi.framework' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.util.tracker' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.core.runtime.compatibility.auth' version='3.2.200.v20100517'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: %pluginName&#xA;Bundle-Version: 3.2.200.v20100517&#xA;Eclipse-LazyStart: true&#xA;Import-Package: org.eclipse.osgi.framework.log,org.eclipse.osgi.service.datalocation,org.eclipse.osgi.util;version=&quot;1.0.0&quot;,org.osgi.framework,org.osgi.util.tracker&#xA;Bundle-Activator: org.eclipse.core.internal.runtime.auth.Activator&#xA;Bundle-Vendor: %providerName&#xA;Require-Bundle: org.eclipse.equinox.common;bundle-version=&quot;[3.2.0,4.0.0)&quot;&#xA;Export-Package: org.eclipse.core.internal.runtime.auth;x-friends:=&quot;org.eclipse.core.runtime&quot;&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/eclipse:org.eclipse.core.runtime.compatibility.auth;tag=v20100517&#xA;Bundle-SymbolicName: org.eclipse.core.runtime.compatibility.auth&#xA;Manifest-Version: 1.0&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: CDC-1.0/Foundation-1.0,J2SE-1.3&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.emf.common' version='2.6.0.v20100914-1218'>
+      <update id='org.eclipse.emf.common' range='[0.0.0,2.6.0.v20100914-1218)' severity='0'/>
+      <properties size='6'>
+        <property name='df_LT.pluginName' value='EMF Common'/>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='buckminster.build.id' value='R201009141218'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.common' version='2.6.0.v20100914-1218'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.emf.common' version='2.6.0.v20100914-1218'/>
+        <provided namespace='java.package' name='org.eclipse.emf.common' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.common.archive' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.common.command' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.common.notify' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.common.notify.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.emf.common.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.6.0,4.0.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.emf.common' version='2.6.0.v20100914-1218'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Created-By: 2.3 (IBM Corporation)&#xA;Manifest-Version: 1.0&#xA;Bundle-Name: %pluginName&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ClassPath: .&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Export-Package: org.eclipse.emf.common,org.eclipse.emf.common.archive,org.eclipse.emf.common.command,org.eclipse.emf.common.notify,org.eclipse.emf.common.notify.impl,org.eclipse.emf.common.util&#xA;Bundle-Version: 2.6.0.v20100914-1218&#xA;Bundle-Activator: org.eclipse.emf.common.CommonPlugin$Implementation&#xA;Require-Bundle: org.eclipse.core.runtime;bundle-version=&quot;[3.6.0,4.0.0)&quot;&#xA;Eclipse-LazyStart: true&#xA;Bundle-SymbolicName: org.eclipse.emf.common;singleton:=true&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Bundle-Localization: plugin
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.equinox.common' version='3.6.0.v20100503'>
+      <update id='org.eclipse.equinox.common' range='[0.0.0,3.6.0.v20100503)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
+        <property name='df_LT.pluginName' value='Common Eclipse Runtime'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.common' version='3.6.0.v20100503'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.equinox.common' version='3.6.0.v20100503'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.boot' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.internal.runtime' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime' version='3.4.0'/>
+        <provided namespace='java.package' name='org.eclipse.equinox.events' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='java.package' name='org.eclipse.osgi.framework.log' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.datalocation' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.debug' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.localization' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.service.urlconversion' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.service.url' range='0.0.0'/>
+        <required namespace='java.package' name='org.eclipse.osgi.util' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.framework' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.service.packageadmin' range='0.0.0'/>
+        <required namespace='java.package' name='org.osgi.util.tracker' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.equinox.common' version='3.6.0.v20100503'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: CDC-1.1/Foundation-1.1,J2SE-1.4&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: org.eclipse.core.internal.runtime.Activator&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/rt:org.eclipse.equinox/components/bundles/org.eclipse.equinox.common;tag=v20100503&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 3.6.0.v20100503&#xA;Bundle-Localization: plugin&#xA;Comment-Header: Both Eclipse-LazyStart and Bundle-ActivationPolicy are specified for compatibility with 3.2&#xA;Export-Package: org.eclipse.core.internal.boot;x-friends:=&quot;org.eclipse.core.resources,org.eclipse.core.runtime.compatibility,org.eclipse.pde.build&quot;,org.eclipse.core.internal.runtime;common=split;mandatory:=common; x-friends:=&quot;org.eclipse.core.contenttype,  org.eclipse.core.jobs,  org.eclipse.equinox.preferences,  org.eclipse.equinox.registry,  org.eclipse.core.runtime,  org.eclipse.core.runtime.compatibility,  org.eclipse.core.filesystem,  org.eclipse.equinox.security&quot;,org.eclipse.core.runtime;common=split;version=&quot;3.4.0&quot;;mandatory:=common,org.eclipse.equinox.events;version=&quot;1.0.0&quot;&#xA;Bundle-SymbolicName: org.eclipse.equinox.common; singleton:=true&#xA;Import-Package: org.eclipse.osgi.framework.log,org.eclipse.osgi.service.datalocation,org.eclipse.osgi.service.debug,org.eclipse.osgi.service.localization,org.eclipse.osgi.service.urlconversion,org.osgi.service.url,org.eclipse.osgi.util,org.osgi.framework,org.osgi.service.packageadmin,org.osgi.util.tracker&#xA;Eclipse-LazyStart: true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.osgi' version='3.6.2.R36x_v20110210'>
+      <update id='org.eclipse.osgi' range='[0.0.0,3.6.2.R36x_v20110210)' severity='0'/>
+      <properties size='6'>
+        <property name='df_LT.systemBundle' value='OSGi System Bundle'/>
+        <property name='df_LT.eclipse.org' value='Eclipse.org - Equinox'/>
+        <property name='org.eclipse.equinox.p2.name' value='%systemBundle'/>
+        <property name='org.eclipse.equinox.p2.description' value='%systemBundle'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%eclipse.org'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='systembundle'/>
+      </properties>
+      <provides size='62'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.osgi' version='3.6.2.R36x_v20110210'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.osgi' version='3.6.2.R36x_v20110210'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.event' version='1.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.console' version='1.1.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.eventmgr' version='1.2.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.log' version='1.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.launch' version='1.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.datalocation' version='1.3.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.debug' version='1.2.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.environment' version='1.3.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.localization' version='1.1.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.pluginconversion' version='1.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.resolver' version='1.4.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.runnable' version='1.1.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.security' version='1.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.urlconversion' version='1.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.signedcontent' version='1.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.storagemanager' version='1.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.util' version='1.1.0'/>
+        <provided namespace='java.package' name='org.osgi.framework' version='1.5.0'/>
+        <provided namespace='java.package' name='org.osgi.framework.launch' version='1.0.0'/>
+        <provided namespace='java.package' name='org.osgi.framework.hooks.service' version='1.0.0'/>
+        <provided namespace='java.package' name='org.osgi.service.condpermadmin' version='1.1.0'/>
+        <provided namespace='java.package' name='org.osgi.service.framework' version='1.0.0'/>
+        <provided namespace='java.package' name='org.osgi.service.packageadmin' version='1.2.0'/>
+        <provided namespace='java.package' name='org.osgi.service.permissionadmin' version='1.2.0'/>
+        <provided namespace='java.package' name='org.osgi.service.startlevel' version='1.1.0'/>
+        <provided namespace='java.package' name='org.osgi.service.url' version='1.0.0'/>
+        <provided namespace='java.package' name='org.osgi.util.tracker' version='1.4.0'/>
+        <provided namespace='java.package' name='org.osgi.util.tracker' version='1.4.2'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime.adaptor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime.internal.adaptor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.core.runtime.internal.stats' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.baseadaptor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.baseadaptor.bundlefile' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.baseadaptor.hooks' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.baseadaptor.loader' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.adaptor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.debug' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.internal.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.internal.protocol' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.internal.protocol.bundleentry' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.internal.protocol.bundleresource' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.internal.protocol.reference' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.internal.reliablefile' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.framework.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.baseadaptor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.composite' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.loader' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.loader.buddy' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.module' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.profile' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.resolver' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.serviceregistry' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.permadmin' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.provisional.service.security' version='1.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.provisional.verifier' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.service.security' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.internal.signedcontent' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.osgi.service.internal.composite' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.osgi' version='3.6.2.R36x_v20110210'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: %systemBundle&#xA;Export-Package: org.eclipse.osgi.event;version=&quot;1.0&quot;,org.eclipse.osgi.framework.console;version=&quot;1.1&quot;,org.eclipse.osgi.framework.eventmgr;version=&quot;1.2&quot;,org.eclipse.osgi.framework.log;version=&quot;1.0&quot;,org.eclipse.osgi.launch; version=&quot;1.0&quot;,org.eclipse.osgi.service.datalocation;version=&quot;1.3&quot;,org.eclipse.osgi.service.debug;version=&quot;1.2&quot;,org.eclipse.osgi.service.environment;version=&quot;1.3&quot;,org.eclipse.osgi.service.localization;version=&quot;1.1&quot;,org.eclipse.osgi.service.pluginconversion;version=&quot;1.0&quot;,org.eclipse.osgi.service.resolver;version=&quot;1.4&quot;,org.eclipse.osgi.service.runnable;version=&quot;1.1&quot;,org.eclipse.osgi.service.security; version=&quot;1.0&quot;,org.eclipse.osgi.service.urlconversion;version=&quot;1.0&quot;,org.eclipse.osgi.signedcontent; version=&quot;1.0&quot;,org.eclipse.osgi.storagemanager;version=&quot;1.0&quot;,org.eclipse.osgi.util;version=&quot;1.1&quot;,org.osgi.framework;version=&quot;1.5&quot;,org.osgi.framework.launch; version=&quot;1.0&quot;,org.osgi.framework.hooks.service; version=&quot;1.0&quot;,org.osgi.service.condpermadmin;version=&quot;1.1&quot;,org.osgi.service.framework; version=&quot;1.0&quot;; x-internal:=true,org.osgi.service.packageadmin;version=&quot;1.2&quot;,org.osgi.service.permissionadmin;version=&quot;1.2&quot;,org.osgi.service.startlevel;version=&quot;1.1&quot;,org.osgi.service.url;version=&quot;1.0&quot;,org.osgi.util.tracker;version=&quot;1.4.0&quot;,org.osgi.util.tracker;version=&quot;1.4.2&quot;,org.eclipse.core.runtime.adaptor;x-friends:=&quot;org.eclipse.core.runtime&quot;,org.eclipse.core.runtime.internal.adaptor;x-internal:=true,org.eclipse.core.runtime.internal.stats;x-friends:=&quot;org.eclipse.core.runtime&quot;,org.eclipse.osgi.baseadaptor;x-internal:=true,org.eclipse.osgi.baseadaptor.bundlefile;x-internal:=true,org.eclipse.osgi.baseadaptor.hooks;x-internal:=true,org.eclipse.osgi.baseadaptor.loader;x-internal:=true,org.eclipse.osgi.framework.adaptor;x-internal:=true,org.eclipse.osgi.framework.debug;x-internal:=true,org.eclipse.osgi.framework.internal.core;x-internal:=true,org.eclipse.osgi.framework.internal.protocol;x-internal:=true,org.eclipse.osgi.framework.internal.protocol.bundleentry;x-internal:=true,org.eclipse.osgi.framework.internal.protocol.bundleresource;x-internal:=true,org.eclipse.osgi.framework.internal.protocol.reference;x-internal:=true,org.eclipse.osgi.framework.internal.reliablefile;x-internal:=true,org.eclipse.osgi.framework.util;x-internal:=true,org.eclipse.osgi.internal.baseadaptor;x-internal:=true,org.eclipse.osgi.internal.composite; x-internal:=true,org.eclipse.osgi.internal.loader;x-internal:=true,org.eclipse.osgi.internal.loader.buddy; x-internal:=true,org.eclipse.osgi.internal.module;x-internal:=true,org.eclipse.osgi.internal.profile;x-internal:=true,org.eclipse.osgi.internal.resolver;x-internal:=true,org.eclipse.osgi.internal.serviceregistry; x-internal:=true,org.eclipse.osgi.internal.permadmin;x-internal:=true,org.eclipse.osgi.internal.provisional.service.security; x-friends:=&quot;org.eclipse.equinox.security.ui&quot;;version=&quot;1.0.0&quot;,org.eclipse.osgi.internal.provisional.verifier;x-friends:=&quot;org.eclipse.update.core,org.eclipse.ui.workbench,org.eclipse.equinox.p2.artifact.repository&quot;,org.eclipse.osgi.internal.service.security;x-friends:=&quot;org.eclipse.equinox.security.ui&quot;,org.eclipse.osgi.internal.signedcontent; x-internal:=true,org.eclipse.osgi.service.internal.composite; x-internal:=true&#xA;Bundle-DocUrl: http://www.eclipse.org&#xA;Export-Service: org.osgi.service.packageadmin.PackageAdmin,org.osgi.service.permissionadmin.PermissionAdmin,org.osgi.service.startlevel.StartLevel,org.eclipse.osgi.service.debug.DebugOptions&#xA;Bundle-Description: %systemBundle&#xA;Eclipse-ExtensibleAPI: true&#xA;Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/rt:org.eclipse.equinox/framework/bundles/org.eclipse.osgi;tag=R36x_v20110210&#xA;Bundle-Vendor: %eclipse.org&#xA;Bundle-ManifestVersion: 2&#xA;Eclipse-SystemBundle: true&#xA;Manifest-Version: 1.0&#xA;Main-Class: org.eclipse.core.runtime.adaptor.EclipseStarter&#xA;Bundle-Version: 3.6.2.R36x_v20110210&#xA;Bundle-Localization: systembundle&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5,OSGi/Minimum-1.2&#xA;Bundle-Copyright: %copyright&#xA;Bundle-Activator: org.eclipse.osgi.framework.internal.core.SystemBundleActivator&#xA;Bundle-SymbolicName: org.eclipse.osgi; singleton:=true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.m2m.atl.dsls' version='3.1.2.v20110119-0755'>
+      <update id='org.eclipse.m2m.atl.dsls' range='[0.0.0,3.1.2.v20110119-0755)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='Eclipse Modeling Project'/>
+        <property name='df_LT.pluginName' value='ATLAS Transformation Language (ATL) DSLs'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='11'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.m2m.atl.dsls' version='3.1.2.v20110119-0755'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.m2m.atl.dsls' version='3.1.2.v20110119-0755'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.dsls' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.dsls.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.dsls.tcs.extractor' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.dsls.tcs.injector' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.dsls.tcs.injector.wrappers' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.dsls.tcs.injector.wrappers.antlr3' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.m2m.atl.dsls.textsource' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.common' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.m2m.atl.core.emf' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.m2m.atl.dsls' version='3.1.2.v20110119-0755'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: %pluginName&#xA;Ant-Version: Apache Ant 1.7.1&#xA;Bundle-ClassPath: .&#xA;Require-Bundle: org.eclipse.core.resources,org.eclipse.core.runtime,org.antlr.runtime;visibility:=reexport,org.eclipse.m2m.atl.common,org.eclipse.emf.common,org.eclipse.m2m.atl.core.emf&#xA;Bundle-Activator: org.eclipse.m2m.atl.dsls.Activator&#xA;Bundle-Vendor: %providerName&#xA;Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 3.1.2.v20110119-0755&#xA;Bundle-Localization: plugin&#xA;Export-Package: org.eclipse.m2m.atl.dsls,org.eclipse.m2m.atl.dsls.core,org.eclipse.m2m.atl.dsls.tcs.extractor,org.eclipse.m2m.atl.dsls.tcs.injector,org.eclipse.m2m.atl.dsls.tcs.injector.wrappers,org.eclipse.m2m.atl.dsls.tcs.injector.wrappers.antlr3,org.eclipse.m2m.atl.dsls.textsource&#xA;Bundle-SymbolicName: org.eclipse.m2m.atl.dsls;singleton:=true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

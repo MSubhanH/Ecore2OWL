@@ -1,0 +1,12 @@
+--- @atlcompiler atl2006
+--- @nsURI Properties=http://com.atl.commons/2010/Properties
+
+library PropertiesHelpers;
+
+
+helper context Properties!PropertyMap def: containsKey(key: String): Boolean =
+	self.entries->exists(e | e.key = key);
+
+helper context Properties!PropertyMap def: get(key: String): String =
+	self.entries->select(e | e.key = key)->first().value;
+

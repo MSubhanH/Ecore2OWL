@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="com.atl.common/src"/>
+	<classpathentry kind="src" path="com.atl.common/test"/>
+	<classpathentry kind="lib" path="build/repository/target/repository/artifacts.jar"/>
+	<classpathentry kind="lib" path="build/repository/target/repository/content.jar"/>
+	<classpathentry kind="lib" path="build/repository/target/repository/features/com.atl.common.feature_0.7.1.201105191952.jar"/>
+	<classpathentry kind="lib" path="build/repository/target/repository/plugins/com.atl.common_0.7.1.201105191952.jar"/>
+	<classpathentry kind="lib" path="build/snapshots-atl-commons/artifacts.jar"/>
+	<classpathentry kind="lib" path="build/snapshots-atl-commons/content.jar"/>
+	<classpathentry kind="lib" path="build/snapshots-atl-commons/features/com.atl.common.feature_0.7.1.201105162128.jar"/>
+	<classpathentry kind="lib" path="build/snapshots-atl-commons/plugins/com.atl.common_0.7.1.201105162128.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.m2m.atl.common_3.8.0.v201705182014.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/com.atl.common_0.5.6.201005251350.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.emf.common_2.13.0.v20170609-0707.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.m2m.atl.core_3.8.0.v201705182014.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.m2m.atl.core.emf_3.8.0.v201705182014.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.core.runtime_3.13.0.v20170207-1030.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.gmf.runtime.emf.core_1.7.0.201706061437.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.gmf.runtime.emf.clipboard.core_1.7.0.201706061437.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.m2m.atl.engine.emfvm_3.8.0.v201705182014.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.core.runtime-3.1.0.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.eclipse.m2m.atl.engine_3.8.0.v201705182014.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse Jave IDE/eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
