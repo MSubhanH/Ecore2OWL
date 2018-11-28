@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<family_ecore:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:family_ecore="http://example.org/family.ecore">
-  <member name="Saad" hasBrother="//@member.1"/>
-  <member name="Ali" hasBrother="//@member.0"/>
-  <member name="Ahmed" hasFather="//@member.1" hasSister="//@member.3" hasUncle="//@member.0"/>
-  <member name="Sarah"/>
-</family_ecore:Family>
