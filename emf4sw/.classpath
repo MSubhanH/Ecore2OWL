@@ -69,9 +69,9 @@
 	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple.tdb-1.1.0-SNAPSHOT.jar"/>
 	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple-1.1.0-SNAPSHOT.jar"/>
 	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.openrdf.sesame-2.8.0.201402141023-openrdf-sesame-2.8.0-beta1-onejar.jar.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/owlapi-osgidistribution.jar"/>
 	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.slf4j.api-1.7.2.v20121108-1250.jar"/>
 	<classpathentry exported="true" kind="lib" path="Project Jars Final/owlapi-api-4.5.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="Project Jars Final/owlapi-osgidistribution.jar"/>
 	<classpathentry exported="true" kind="lib" path="Project Jars Final/slf4j-api-1.7.22.jar"/>
 	<classpathentry exported="true" kind="lib" path="Project Jars Final/slf4j-nop-1.6.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="Project Jars Final/trove4j-3.0.3.jar"/>
