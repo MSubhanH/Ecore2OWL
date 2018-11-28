@@ -11,71 +11,71 @@
 	<classpathentry kind="src" path="bundles/com.emf4sw.rdf/src"/>
 	<classpathentry kind="src" path="examples/com.emf4sw.owl.examples/src"/>
 	<classpathentry kind="src" path="examples/com.emf4sw.rdf.examples/src"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/antlr-runtime-3.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/aopalliance-1.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/ch.qos.logback.classic-1.0.7.v20121108-1250.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/ch.qos.logback.core-1.0.7.v20121108-1250.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/com.atl.common_0.5.6.201005251350.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/com.google.guava-15.0.0.v201403281430.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/commons-io-2.5.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/guava-20.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/guice-4.1.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/guice-assistedinject-4.1.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/guice-multibindings-4.1.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/jackson-all-1.9.9.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/javax.inject-1.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/javax.servlet-3.1.0.v201410161800.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/jsr305-3.0.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.commons.cli-1.2.0.v201404270220.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.commons.codec-1.6.0.v201305230611.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.commons.io-2.2.0.v201405211200.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.commons.lang-2.6.0.v201404270220.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.commons.logging-1.1.1.v201101211721.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.httpcomponents.httpclient-4.3.6.v201411290715.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.httpcomponents.httpcore-4.3.3.v201411290715.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.jena.tdb-1.0.1.201402141023-org.apache.jena.tdb_1.0.1.jar.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.jena-2.11.1.201402141023.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.log4j-1.2.15.v201012070815.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.xerces-2.9.0.v201101211617.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.xml.resolver-1.2.0.v201005080400.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.apache.xml.serializer-2.7.1.v201005080400.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.core.contenttype-3.5.0.v20150421-2214.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.core.jobs-3.7.0.v20150330-2103.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.core.runtime-3.11.1.v20150903-1804.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.emf.common-2.11.1.v20160208-0816.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.equinox.app-1.3.300.v20150423-1356.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.equinox.common-3.7.0.v20150402-1709.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.equinox.preferences-3.5.300.v20150408-1437.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.equinox.registry-3.6.0.v20150318-1503.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.m2m.atl.common_3.8.0.v201705182014.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.m2m.atl.core.emf_3.8.0.v201705182014.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.m2m.atl.core_3.8.0.v201705182014.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.m2m.atl.dsls-4.0.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.m2m.atl.emftvm.compiler_3.8.0.v201705182014.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.m2m.atl.emftvm-4.0.0-1.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.m2m.atl.engine.emfvm_3.8.0.v201705182014.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.osgi-3.10.102.v20160118-1700.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.xtend.lib.macro-2.9.1.v201512180746.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.xtend.lib-2.9.1.v201512180746.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipse.xtext.xbase.lib-2.9.1.v201512180746.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipselabs.emftriple.feature-1.1.0-SNAPSHOT.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipselabs.emftriple.jena.feature-1.1.0-SNAPSHOT.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipselabs.emftriple.jena-1.1.0-SNAPSHOT.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipselabs.emftriple.sesame.feature-1.1.0-SNAPSHOT.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipselabs.emftriple.sesame-1.1.0-SNAPSHOT.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipselabs.emftriple.source.feature-1.1.0-SNAPSHOT.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipselabs.emftriple.tdb-1.1.0-SNAPSHOT.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.eclipselabs.emftriple-1.1.0-SNAPSHOT.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.openrdf.sesame-2.8.0.201402141023-openrdf-sesame-2.8.0-beta1-onejar.jar.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/org.slf4j.api-1.7.2.v20121108-1250.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/owlapi-api-4.5.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/owlapi-osgidistribution.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/slf4j-api-1.7.22.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/slf4j-nop-1.6.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/trove4j-3.0.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/Ecore2OWL Transformation Projects/Git Repository Test/Ecore2OWL/emf4sw/Project Jars Final/xz-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/antlr-runtime-3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/aopalliance-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/ch.qos.logback.classic-1.0.7.v20121108-1250.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/ch.qos.logback.core-1.0.7.v20121108-1250.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/com.atl.common_0.5.6.201005251350.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/com.google.guava-15.0.0.v201403281430.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/commons-io-2.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/guava-20.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/guice-4.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/guice-assistedinject-4.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/guice-multibindings-4.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/jackson-all-1.9.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/javax.inject-1.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/javax.servlet-3.1.0.v201410161800.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/jsr305-3.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.commons.cli-1.2.0.v201404270220.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.commons.codec-1.6.0.v201305230611.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.commons.io-2.2.0.v201405211200.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.commons.lang-2.6.0.v201404270220.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.commons.logging-1.1.1.v201101211721.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.httpcomponents.httpclient-4.3.6.v201411290715.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.httpcomponents.httpcore-4.3.3.v201411290715.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.jena.tdb-1.0.1.201402141023-org.apache.jena.tdb_1.0.1.jar.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.jena-2.11.1.201402141023.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.log4j-1.2.15.v201012070815.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.xerces-2.9.0.v201101211617.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.xml.resolver-1.2.0.v201005080400.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.apache.xml.serializer-2.7.1.v201005080400.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.core.contenttype-3.5.0.v20150421-2214.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.core.jobs-3.7.0.v20150330-2103.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.core.runtime-3.11.1.v20150903-1804.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.emf.common-2.11.1.v20160208-0816.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.equinox.app-1.3.300.v20150423-1356.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.equinox.common-3.7.0.v20150402-1709.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.equinox.preferences-3.5.300.v20150408-1437.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.equinox.registry-3.6.0.v20150318-1503.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.m2m.atl.common_3.8.0.v201705182014.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.m2m.atl.core.emf_3.8.0.v201705182014.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.m2m.atl.core_3.8.0.v201705182014.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.m2m.atl.dsls-4.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.m2m.atl.emftvm.compiler_3.8.0.v201705182014.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.m2m.atl.emftvm-4.0.0-1.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.m2m.atl.engine.emfvm_3.8.0.v201705182014.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.osgi-3.10.102.v20160118-1700.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.xtend.lib.macro-2.9.1.v201512180746.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.xtend.lib-2.9.1.v201512180746.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipse.xtext.xbase.lib-2.9.1.v201512180746.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple.feature-1.1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple.jena.feature-1.1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple.jena-1.1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple.sesame.feature-1.1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple.sesame-1.1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple.source.feature-1.1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple.tdb-1.1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.eclipselabs.emftriple-1.1.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.openrdf.sesame-2.8.0.201402141023-openrdf-sesame-2.8.0-beta1-onejar.jar.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/org.slf4j.api-1.7.2.v20121108-1250.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/owlapi-api-4.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/owlapi-osgidistribution.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/slf4j-api-1.7.22.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/slf4j-nop-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/trove4j-3.0.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="Project Jars Final/xz-1.6.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/CardinalityMapper"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/atl-commons"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
