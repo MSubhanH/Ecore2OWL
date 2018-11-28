@@ -18,6 +18,16 @@
         <details key="uri" value="http://example.org/family.ecore#hasFather"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat" lowerBound="0" name="height" upperBound="1" xsi:type="ecore:EAttribute">
+      <eAnnotations source="http://www.w3.org/2002/07/owl#DatatypeProperty">
+        <details key="uri" value="http://example.org/family.ecore#height"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures eType="//Person" lowerBound="0" name="hasSister" upperBound="-1" xsi:type="ecore:EReference">
+      <eAnnotations source="http://www.w3.org/2002/07/owl#ObjectProperty">
+        <details key="uri" value="http://example.org/family.ecore#hasSister"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" lowerBound="0" name="age" upperBound="1" xsi:type="ecore:EAttribute">
       <eAnnotations source="http://www.w3.org/2002/07/owl#DatatypeProperty">
         <details key="uri" value="http://example.org/family.ecore#age"/>
@@ -44,6 +54,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
+  
   
   
 </ecore:EPackage>
